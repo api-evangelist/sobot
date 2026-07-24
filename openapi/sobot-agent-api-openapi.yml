@@ -1,0 +1,128 @@
+openapi: 3.1.0
+info:
+  title: OpenAPI Plant Store Agent API
+  description: A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification
+  license:
+    name: MIT
+  version: 1.0.0
+servers:
+- url: https://sg.sobot.io
+security:
+- bearerAuth: []
+tags:
+- name: Agent
+paths:
+  /agent/exts/langCode:
+    put:
+      summary: 修改分机语音编码
+      deprecated: false
+      description: 修改分机语音编码
+      tags:
+      - Agent
+      parameters:
+      - name: agent
+        in: query
+        description: 座席(座席工号或座席id)
+        required: false
+        schema:
+          type: string
+      - name: agentType
+        in: query
+        description: 座席类型(1表示座席id；0或不传值表示座席工号)
+        required: false
+        schema:
+          type: string
+      - name: operator
+        in: query
+        description: 操作人
+        required: false
+        schema:
+          type: string
+      - name: ext
+        in: query
+        description: ''
+        required: false
+        schema:
+          type: string
+      - name: langCodeTxt
+        in: query
+        description: ''
+        required: false
+        schema:
+          type: string
+      - name: Company-Id
+        in: header
+        description: 公司ID
+        required: false
+        schema:
+          type: string
+      - name: authorization
+        in: header
+        description: ''
+        example: '{{authorization}}'
+        schema:
+          type: string
+          default: '{{authorization}}'
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseResult%C2%ABExt%C2%BB'
+              examples:
+                '1':
+                  summary: 成功示例
+                  value:
+                    apiVersion: ''
+                    status: ''
+                    code: 0
+                    message: ''
+                    reason: ''
+                    kind: ''
+                    metaData:
+                      creatorId: ''
+                      creationTime: 0
+                      updateUserId: ''
+                      updatedTime: 0
+                    data:
+                      creatorId: ''
+                      creationTime: 0
+                      updateUserId: ''
+                      updatedTime: 0
+                      pageSize: 0
+                      currPage: 0
+                      orderByName: ''
+                      orderByASC: false
+                      partition: false
+                      startExt: ''
+                      batchNum: 0
+                      enabled: 0
+                      extensions:
+                        ? ''
+                        : null
+                      companyId: ''
+                      id: ''
+                      ext: ''
+                      password: ''
+                      bindStatus: 0
+                      bindTime: 0
+                      agentUuid: ''
+                      currentUsingAgentUuid: ''
+                      agentName: ''
+                      extType: 0
+                      domain: ''
+                      ha1: ''
+                      ha1b: ''
+                      status: 0
+                      langCode: ''
+                      langCodeTxt: ''
+                    retMsg: ''
+                    retCode: ''
+          headers: {}
+      security: []
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
