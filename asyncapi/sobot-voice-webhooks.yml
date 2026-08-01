@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: openapi/sobot-voice-openapi.json, https://docs.sobot.io/llms.txt
+spec_type: Webhooks
+note: >-
+  Sobot's voice / call-center product pushes real-time softphone status events
+  over a "webmsg" channel to the integrating client. No standalone AsyncAPI
+  document is published, so this captures the webhook/event surface referenced
+  in the voice API documentation. Confirmed events below; additional
+  reachable/registered counterparts are implied by the pairing but were not
+  transcribed to avoid fabrication.
+channel: webmsg
+transport: websocket-push
+events:
+- name: EventUnreachable
+  description: >-
+    A voice extension became unreachable. Documented as a trigger to call the
+    extension registration-status endpoint (GET /exts/registered/{ext}/{phoneType}/{ip}).
+- name: EventUnregistered
+  description: >-
+    A voice extension was unregistered. Documented as a trigger to call the
+    extension registration-status endpoint.
+related_operations:
+- openapi/sobot-voice-openapi.json#GET /exts/registered/{ext}/{phoneType}/{ip}

@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.sobot.io/updates/
+docs: https://help.sobot.io/updates/
+scheme: dated-product-updates
+note: >-
+  Sobot publishes a dated "Product Updates" feed for its Contact Center
+  solution at help.sobot.io/updates/ (also surfaced as the "Introduction —
+  Sobot Product Updates" page in the developer docs). It is a rolling
+  product-update log rather than a semantically-versioned API changelog; the
+  live page is the source of truth. Individual dated entries were not
+  transcribed to avoid stale duplication.
+current_version: null
+entries: []

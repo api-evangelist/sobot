@@ -1,0 +1,70 @@
+# Sobot Development
+
+## Docs
+
+- [admin_is_work](https://docs.sobot.io/api-reference/admin_is_work.md): admin_is_work
+- [创建客服](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/创建客服.md)
+- [批量修改客服角色](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/批量修改客服角色.md)
+- [查询客服信息列表](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/查询客服信息列表.md)
+- [查询客服信息列表](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/查询客服信息列表-1.md)
+- [查询部门客服信息](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/查询部门客服信息.md)
+- [编辑客服](https://docs.sobot.io/api-reference/basic-publicservice坐席信息管理/编辑客服.md)
+- [chat_connect](https://docs.sobot.io/api-reference/chat_connect.md): chat_connect
+- [chat_send](https://docs.sobot.io/api-reference/chat_send.md): chat_send
+- [comment](https://docs.sobot.io/api-reference/comment.md): comment
+- [get_detail_by_cid](https://docs.sobot.io/api-reference/get_detail_by_cid.md): get_detail_by_cid
+- [get_once_data](https://docs.sobot.io/api-reference/get_once_data.md): get_once_data
+- [Introduction](https://docs.sobot.io/api-reference/introduction.md): Sobot Product Updates, Sobot Contact Center Solution Updates
+- [offline_msg_data](https://docs.sobot.io/api-reference/offline_msg_data.md): offline_msg_data
+- [out](https://docs.sobot.io/api-reference/out.md): out
+- [Plantwebhook](https://docs.sobot.io/api-reference/plantwebhook.md): Information about a new plant added to the store
+- [query_agent](https://docs.sobot.io/api-reference/query_agent.md): query_agent
+- [query_cids](https://docs.sobot.io/api-reference/query_cids.md): query_cids
+- [query_group](https://docs.sobot.io/api-reference/query_group.md): query_group
+- [querySuggest](https://docs.sobot.io/api-reference/querysuggest.md): querySuggest
+- [robot_chat](https://docs.sobot.io/api-reference/robot_chat.md): robot_chat
+- [robot_feedback](https://docs.sobot.io/api-reference/robot_feedback.md): robot_feedback
+- [修改分机密码](https://docs.sobot.io/api-reference/修改分机密码.md): 修改分机密码
+- [修改分机语音编码](https://docs.sobot.io/api-reference/修改分机语音编码.md): 修改分机语音编码
+- [修改分机语音编码](https://docs.sobot.io/api-reference/修改分机语音编码-1.md): 修改分机语音编码
+- [分页条件查询分机帐号](https://docs.sobot.io/api-reference/分页条件查询分机帐号.md): 分页条件查询分机帐号
+- [分页查询未绑定客服的分机列表和当前座席绑定的分机号](https://docs.sobot.io/api-reference/分页查询未绑定客服的分机列表和当前座席绑定的分机号.md): 分页查询未绑定客服的分机列表和当前座席绑定的分机号
+- [分页查询未被使用的分机帐号](https://docs.sobot.io/api-reference/分页查询未被使用的分机帐号.md): 分页查询未被使用的分机帐号
+- [删除分机](https://docs.sobot.io/api-reference/删除分机.md): 删除分机
+- [只针对接口对接用户](https://docs.sobot.io/api-reference/只针对接口对接用户.md): 只针对接口对接用户
+- [对外接口 api:查询分机列表](https://docs.sobot.io/api-reference/对外接口-api:查询分机列表.md): 对外接口 api:查询分机列表
+- [开放接口新建分机账号](https://docs.sobot.io/api-reference/开放接口新建分机账号.md): 开放接口新建分机账号
+- [批量新建分机](https://docs.sobot.io/api-reference/批量新建分机.md): 批量新建分机
+- [新建分机帐号-------------接口弃用](https://docs.sobot.io/api-reference/新建分机帐号-------接口弃用.md): 新建分机帐号-------------接口弃用
+- [查询分机主语言](https://docs.sobot.io/api-reference/查询分机主语言.md): 查询分机主语言
+- [查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用](https://docs.sobot.io/api-reference/查询分机的注册状态webmsg收到eventunreachableeventunregistered时调用.md): 查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用
+- [查询当前公司下的分机数量](https://docs.sobot.io/api-reference/查询当前公司下的分机数量.md): 查询当前公司下的分机数量
+- [查询未绑定客服的分机列表](https://docs.sobot.io/api-reference/查询未绑定客服的分机列表.md): 查询未绑定客服的分机列表
+- [查询未绑定客服的分机列表和当前座席绑定的分机号](https://docs.sobot.io/api-reference/查询未绑定客服的分机列表和当前座席绑定的分机号.md): 查询未绑定客服的分机列表和当前座席绑定的分机号
+- [查询未被使用的分机帐号](https://docs.sobot.io/api-reference/查询未被使用的分机帐号.md): 查询未被使用的分机帐号
+- [查询用户信息](https://docs.sobot.io/api-reference/查询用户信息.md): 查询用户信息
+- [根据分机号座席信息查询分机详情](https://docs.sobot.io/api-reference/根据分机号座席信息查询分机详情.md): 根据分机号座席信息查询分机详情
+- [Android SDK](https://docs.sobot.io/build-apps/apps/code.md): Display inline code and code blocks
+- [Agent Component SDK](https://docs.sobot.io/build-apps/apps/iOS/Agent Component SDK.md)
+- [Call](https://docs.sobot.io/build-apps/apps/iOS/Call.md)
+- [V1](https://docs.sobot.io/build-apps/apps/iOS/ChannelAccess/V1.md)
+- [V6](https://docs.sobot.io/build-apps/apps/iOS/ChannelAccess/V6.md)
+- [Order](https://docs.sobot.io/build-apps/apps/iOS/Order.md)
+- [Push](https://docs.sobot.io/build-apps/apps/iOS/Push.md)
+- [Telemarketing](https://docs.sobot.io/build-apps/apps/iOS/Telemarketing.md)
+- [IOS SDK](https://docs.sobot.io/build-apps/apps/iOS/iOS SDK.md)
+- [HarmonyOS NEXT SDK](https://docs.sobot.io/build-apps/apps/images.md): Add image, video, and other HTML elements
+- [Flutter SDK](https://docs.sobot.io/build-apps/apps/settings.md): Mintlify gives you complete control over the look and feel of your documentation using the docs.json file
+- [Call Web-JS SDk](https://docs.sobot.io/build-apps/web/calljssdk.md): Add image, video, and other HTML elements
+- [Call Capability (UI Phone Bar)](https://docs.sobot.io/build-apps/web/callphoneui.md): Mintlify gives you complete control over the look and feel of your documentation using the docs.json file
+- [WorkOrder SDK](https://docs.sobot.io/build-apps/web/navigation.md): The navigation field in docs.json defines the pages that go in the navigation menu
+- [Online Web-JS SDk](https://docs.sobot.io/build-apps/web/webjssdk.md): Text, title, and styling in standard markdown
+- [Online Web-Link](https://docs.sobot.io/build-apps/web/weblink.md): Display inline code and code blocks
+
+## OpenAPI Specs
+
+- [voice-openapi](https://docs.sobot.io/api-reference/openapis/voice-openapi.json)
+- [online-openapi](https://docs.sobot.io/api-reference/openapis/online-openapi.json)
+- [basic-openapi](https://docs.sobot.io/api-reference/openapis/basic-openapi.json)
+- [openapi](https://docs.sobot.io/api-reference/openapi.json)
+- [backjson](https://docs.sobot.io/backjson.json)

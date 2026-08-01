@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/ (online, voice), https://help.sobot.io/updates/
+versioning:
+  scheme: uri-path
+  current: v5
+  detail: >-
+    The online chat API is versioned in the request path (/api/5/user/...,
+    i.e. version 5). The basic (agent) and voice extension APIs are exposed as
+    unversioned resource paths on sg.sobot.io.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal deprecation/sunset policy page (RFC 8594) was found. The voice
+    spec does mark individual operations as deprecated in their summaries
+    (see deprecated_operations).
+deprecated_operations:
+- spec: openapi/sobot-voice-openapi.json
+  path: POST /exts
+  summary: 新建分机帐号-------------接口弃用 (create extension account — deprecated)
+product_updates: https://help.sobot.io/updates/
+status_page: null
+sla:
+  url: null
+  note: SLA / uptime commitments are handled per enterprise contract; no public status page was found.

@@ -1,0 +1,59 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/ (online, basic, voice)
+note: >-
+  Entity graph derived from Sobot's OpenAPI paths, request/response fields, and
+  id-reference parameters (cid, partnerid, agent/department/extension ids).
+entities:
+- name: Conversation
+  api: Sobot Online Chat API
+  id_field: cid
+  description: An online chat session between a visitor and a bot and/or human agent.
+- name: Visitor
+  api: Sobot Online Chat API
+  id_field: partnerid
+  description: The end customer / user connecting to chat (partnerid is the caller-supplied unique key).
+- name: Message
+  api: Sobot Online Chat API
+  description: A message sent within a conversation (chat_send) or by the bot (robot_chat).
+- name: Group
+  api: Sobot Online Chat API
+  description: A skill/routing group agents belong to.
+- name: Agent
+  api: Sobot Basic (Agent) API
+  description: A customer-service seat / operator.
+- name: Department
+  api: Sobot Basic (Agent) API
+  description: An organizational grouping of agents.
+- name: Role
+  api: Sobot Basic (Agent) API
+  description: An agent role/permission set assigned to agents.
+- name: Extension
+  api: Sobot Voice Extension API
+  id_field: ext
+  description: A voice / softphone extension account used by the call center.
+relationships:
+- from: Message
+  type: belongs_to
+  to: Conversation
+  via: cid
+- from: Conversation
+  type: belongs_to
+  to: Visitor
+  via: partnerid
+- from: Conversation
+  type: has_one
+  to: Agent
+  via: agent
+- from: Agent
+  type: belongs_to
+  to: Department
+  via: departId
+- from: Agent
+  type: has_many
+  to: Role
+  via: roleId
+- from: Extension
+  type: has_one
+  to: Agent
+  via: agentUUID

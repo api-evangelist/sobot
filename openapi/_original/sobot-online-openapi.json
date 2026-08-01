@@ -1,0 +1,812 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "OpenAPI Plant Store",
+      "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+      "license": {
+        "name": "MIT"
+      },
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "https://sg.sobot.io"
+      }
+    ],
+    "security": [
+      {
+        "bearerAuth": []
+      }
+    ],
+    "paths" : {
+      "/api/5/user/chat_connect" : {
+        "post" : {
+          "summary" : "chat_connect",
+          "description" : "chat_connect",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID，需要保证唯一性"
+                    },
+                    "source" : {
+                      "type" : "integer",
+                      "description" : "渠道来源：用户来源:0 桌面网站、1 微信、2 App、3 微博、4 移动网站、6 呼叫、7 工单中心、8 客户中心、9 企业微信、10 小程序、12 百度营销、13 今日头条、14 奇虎360、15 阿里汇川、16 搜狗、17 微信客服、20 广点通、21 知乎、22 facebook、23 whatsApp、24 instagram、25 line、26 discord、33 telegram"
+                    },
+                    "channel_flag" : {
+                      "type" : "integer",
+                      "description" : "子渠道编码"
+                    },
+                    "user_nick" : {
+                      "type" : "string",
+                      "description" : "用户昵称"
+                    },
+                    "user_name" : {
+                      "type" : "string",
+                      "description" : "用户姓名"
+                    },
+                    "user_tels" : {
+                      "type" : "string",
+                      "description" : "电话，多个以逗号分隔"
+                    },
+                    "user_emails" : {
+                      "type" : "string",
+                      "description" : "邮箱，多个以逗号分隔"
+                    },
+                    "user_img" : {
+                      "type" : "string",
+                      "description" : "用户头像"
+                    },
+                    "params" : {
+                      "type" : "string",
+                      "description" : "自定义字段，json格式"
+                    },
+                    "agentid" : {
+                      "type" : "string",
+                      "description" : "指定客服id"
+                    },
+                    "tran_flag" : {
+                      "type" : "integer",
+                      "description" : "指定客服转接方式：1-不能转出，0-可转出"
+                    },
+                    "groupid" : {
+                      "type" : "string",
+                      "description" : "指定技能组id"
+                    },
+                    "channel_id" : {
+                      "type" : "integer",
+                      "description" : "子渠道编码"
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/chat_send" : {
+        "post" : {
+          "summary" : "chat_send",
+          "description" : "chat_send",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID，需要保证唯一性"
+                    },
+                    "content" : {
+                      "type" : "string",
+                      "description" : "消息内容"
+                    },
+                    "msg_type" : {
+                      "type" : "string",
+                      "description" : "消息类型：（text、image、voice、video 默认为 text 纯文本，如果为 image 和 voice、video 的时候，content 传递图片地址或者音频、视频地址,其中音频支持 mp3、wav 两种格式）"
+                    },
+                    "appoint_cid" : {
+                      "type" : "string",
+                      "description" : "引用消息的会话id"
+                    },
+                    "appoint_msgid" : {
+                      "type" : "string",
+                      "description" : "引用消息的消息id"
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/robot_chat" : {
+        "post" : {
+          "summary" : "robot_chat",
+          "description" : "robot_chat",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID，需要保证唯一性"
+                    },
+                    "question" : {
+                      "type" : "string",
+                      "description" : "用户问题,问题类型为0时，传入原始问题;问题类型为1时，传入点击问题的词条ID;问题类型为2时，根据多轮会话说明传入。"
+                    },
+                    "user_nick" : {
+                      "type" : "string",
+                      "description" : "用户昵称"
+                    },
+                    "source" : {
+                      "type" : "string",
+                      "description" : "渠道来源：用户来源:0 桌面网站、1 微信、2 App、3 微博、4 移动网站、6 呼叫、7 工单中心、8 客户中心、9 企业微信、10 小程序、12 百度营销、13 今日头条、14 奇虎360、15 阿里汇川、16 搜狗、17 微信客服、20 广点通、21 知乎、22 facebook、23 whatsApp、24 instagram、25 line、26 discord、33 telegram"
+                    },
+                    "robot_flag" : {
+                      "type" : "string",
+                      "description" : "机器人标识"
+                    },
+                    "question_flag" : {
+                      "type" : "string",
+                      "description" : "问题类型 0-普通 1-点击 2-多轮"
+                    },
+                    "request_text" : {
+                      "type" : "string",
+                      "description" : "请求文本"
+                    },
+                    "channel_flag" : {
+                      "type" : "string",
+                      "description" : "子渠道标识"
+                    },
+                    "refer_num" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "msg_type" : {
+                      "type" : "integer",
+                      "description" : "",
+                      "enum" : [ ]
+                    },
+                    "lan_flag" : {
+                      "type" : "integer",
+                      "description" : ""
+                    },
+                    "reception_version" : {
+                      "type" : "integer",
+                      "description" : "接待版本 0-v1，1-v6（如果传入的是V6版本，但是公司实际最高配置是V1则忽略传入的版本，按照V1操作）"
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/robot_feedback" : {
+        "post" : {
+          "summary" : "robot_feedback",
+          "description" : "robot_feedback",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "visitorid" : {
+                      "type" : "string",
+                      "description" : "访客ID,由智齿生成，商户内唯一"
+                    },
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID,需要保证唯一性"
+                    },
+                    "from" : {
+                      "type" : "integer",
+                      "description" : "用户来源：0-开放平台，1-pc/h5/sdk,2-微信",
+                      "default" : 0
+                    },
+                    "cid" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "timezone" : {
+                      "type" : "string",
+                      "description" : "时区"
+                    },
+                    "docid" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "doc_name" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "status" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "robot_flag" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "msgid" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "ruleid" : {
+                      "type" : "string",
+                      "description" : "规则id"
+                    },
+                    "answerid" : {
+                      "type" : "string",
+                      "description" : "答案id"
+                    },
+                    "answer" : {
+                      "type" : "string",
+                      "description" : "答案"
+                    },
+                    "gpt_answer_type" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/comment" : {
+        "post" : {
+          "summary" : "comment",
+          "description" : "comment",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "type" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "score" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "tag" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "remark" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "comment_type" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "solved" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/out" : {
+        "post" : {
+          "summary" : "out",
+          "description" : "out",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/offline_msg_data" : {
+        "post" : {
+          "summary" : "offline_msg_data",
+          "description" : "offline_msg_data",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "visitorid" : {
+                      "type" : "string",
+                      "description" : "访客ID,由智齿生成，商户内唯一"
+                    },
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID,需要保证唯一性"
+                    },
+                    "from" : {
+                      "type" : "integer",
+                      "description" : "用户来源：0-开放平台，1-pc/h5/sdk,2-微信",
+                      "default" : 0
+                    },
+                    "cid" : {
+                      "type" : "string",
+                      "description" : "会话ID"
+                    },
+                    "timezone" : {
+                      "type" : "string",
+                      "description" : "时区"
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/query_cids" : {
+        "post" : {
+          "summary" : "query_cids",
+          "description" : "query_cids",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "visitorid" : {
+                      "type" : "string",
+                      "description" : "访客ID,由智齿生成，商户内唯一"
+                    },
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID,需要保证唯一性"
+                    },
+                    "from" : {
+                      "type" : "integer",
+                      "description" : "用户来源：0-开放平台，1-pc/h5/sdk,2-微信",
+                      "default" : 0
+                    },
+                    "cid" : {
+                      "type" : "string",
+                      "description" : "会话ID"
+                    },
+                    "timezone" : {
+                      "type" : "string",
+                      "description" : "时区"
+                    },
+                    "start_time" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "end_time" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/get_detail_by_cid" : {
+        "post" : {
+          "summary" : "get_detail_by_cid",
+          "description" : "get_detail_by_cid",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "visitorid" : {
+                      "type" : "string",
+                      "description" : "访客ID,由智齿生成，商户内唯一"
+                    },
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : "对接ID,需要保证唯一性"
+                    },
+                    "from" : {
+                      "type" : "integer",
+                      "description" : "用户来源：0-开放平台，1-pc/h5/sdk,2-微信",
+                      "default" : 0
+                    },
+                    "cid" : {
+                      "type" : "string",
+                      "description" : "会话ID"
+                    },
+                    "timezone" : {
+                      "type" : "string",
+                      "description" : "时区"
+                    },
+                    "name_flag" : {
+                      "type" : "integer",
+                      "description" : "是否需要返回用户昵称，1：需要，0：不需要"
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/admin_is_work" : {
+        "post" : {
+          "summary" : "admin_is_work",
+          "description" : "admin_is_work",
+          "parameters" : [ {
+            "name" : "groupid",
+            "in" : "query",
+            "description" : "",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/get_once_data" : {
+        "post" : {
+          "summary" : "get_once_data",
+          "description" : "get_once_data",
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/query_group" : {
+        "post" : {
+          "summary" : "query_group",
+          "description" : "query_group",
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/query_agent" : {
+        "post" : {
+          "summary" : "query_agent",
+          "description" : "query_agent",
+          "parameters" : [ {
+            "name" : "visitorid",
+            "in" : "query",
+            "description" : "访客ID,由智齿生成，商户内唯一",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "partnerid",
+            "in" : "query",
+            "description" : "对接ID,需要保证唯一性",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "from",
+            "in" : "query",
+            "description" : "用户来源：0-开放平台，1-pc/h5/sdk,2-微信",
+            "required" : false,
+            "schema" : {
+              "type" : "integer",
+              "nullable" : false,
+              "default" : 0
+            }
+          }, {
+            "name" : "cid",
+            "in" : "query",
+            "description" : "会话ID",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "timezone",
+            "in" : "query",
+            "description" : "时区",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "name_flag",
+            "in" : "query",
+            "description" : "是否需要返回用户昵称，1：需要，0：不需要",
+            "required" : false,
+            "schema" : {
+              "type" : "integer",
+              "nullable" : false
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/query_session_status" : {
+        "post" : {
+          "summary" : "只针对接口对接用户",
+          "description" : "只针对接口对接用户",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "partnerid" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : "根据partnerid返回用户当前状态及会话id"
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/getUserInfo" : {
+        "post" : {
+          "summary" : "查询用户信息",
+          "description" : "查询用户信息",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "uid" : {
+                      "type" : "string",
+                      "description" : ""
+                    }
+                  },
+                  "description" : ""
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "No Content"
+            }
+          }
+        }
+      },
+      "/api/5/user/query_suggest" : {
+        "get" : {
+          "summary" : "querySuggest",
+          "description" : "querySuggest",
+          "parameters" : [ {
+            "name" : "question",
+            "in" : "query",
+            "description" : "待分词问题",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "partnerid",
+            "in" : "query",
+            "description" : "访客id?",
+            "required" : false,
+            "schema" : {
+              "type" : "string",
+              "nullable" : false
+            }
+          }, {
+            "name" : "num",
+            "in" : "query",
+            "description" : "分词联想数量",
+            "required" : false,
+            "schema" : {
+              "type" : "integer",
+              "nullable" : false
+            }
+          }, {
+            "name" : "robot_flag",
+            "in" : "query",
+            "description" : "机器人id",
+            "required" : false,
+            "schema" : {
+              "type" : "integer",
+              "nullable" : false
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "void",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "type" : "object",
+                    "properties" : {
+                      "page_no" : {
+                        "type" : "integer",
+                        "description" : ""
+                      },
+                      "page_count" : {
+                        "type" : "integer",
+                        "description" : ""
+                      },
+                      "total_count" : {
+                        "type" : "integer",
+                        "description" : ""
+                      },
+                      "page_size" : {
+                        "type" : "integer",
+                        "description" : ""
+                      },
+                      "items" : {
+                        "type" : "array",
+                        "description" : "",
+                        "items" : {
+                          "type" : "object",
+                          "properties" : {
+                            "key" : {
+                              "type" : "string"
+                            }
+                          },
+                          "description" : "java.util.Map"
+                        }
+                      },
+                      "item" : {
+                        "type" : "object",
+                        "properties" : { },
+                        "description" : ""
+                      },
+                      "ret_code" : {
+                        "type" : "string",
+                        "description" : ""
+                      },
+                      "ret_msg" : {
+                        "type" : "string",
+                        "description" : ""
+                      }
+                    },
+                    "description" : "void"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "webhooks": {
+      "/plant/webhook": {
+        "post": {
+          "description": "Information about a new plant added to the store",
+          "requestBody": {
+            "description": "Plant added to the store",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewPlant"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Return a 200 status to indicate that the data was received successfully"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+    
+      },
+      "securitySchemes": {
+        "bearerAuth": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      }
+    }
+  }

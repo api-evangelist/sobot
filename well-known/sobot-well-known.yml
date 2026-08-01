@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: probed
+note: >-
+  Probed /.well-known/ on the Sobot website, console, and docs hosts. The
+  console and marketing hosts return HTTP 200 for every path, but the body is
+  the single-page-app HTML shell (Content-Type text/html), i.e. a soft-404 —
+  no real well-known document is served. docs.sobot.io returns a true 404.
+  No SecurityTxt, OpenID, OAuth-Authorization-Server, API-Catalog, or
+  AI-Plugin document was found; no WellKnown/SecurityTxt pointer is emitted.
+hosts:
+- host: https://www.sobot.io
+  documents:
+  - {path: /.well-known/security.txt, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/openid-configuration, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/oauth-authorization-server, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/api-catalog, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/ai-plugin.json, status: 200, real: false, content_type: text/html}
+- host: https://sg.sobot.io
+  documents:
+  - {path: /.well-known/security.txt, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/openid-configuration, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/oauth-authorization-server, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/api-catalog, status: 200, real: false, content_type: text/html}
+  - {path: /.well-known/ai-plugin.json, status: 200, real: false, content_type: text/html}
+- host: https://docs.sobot.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404, real: false}
+  - {path: /.well-known/openid-configuration, status: 404, real: false}
+  - {path: /.well-known/oauth-authorization-server, status: 404, real: false}
+  - {path: /.well-known/api-catalog, status: 404, real: false}
+  - {path: /.well-known/ai-plugin.json, status: 404, real: false}

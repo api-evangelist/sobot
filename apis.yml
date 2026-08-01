@@ -1,8 +1,29 @@
 aid: sobot
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sobot.png
 name: Sobot
-description: 'Sobot is a company surfaced as a portfolio company of softbank-vision-fund and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Sobot is an all-in-one AI-powered contact center and customer engagement
+  platform used by more than 100,000 companies worldwide. Its products span an
+  omnichannel Live Chat workspace, a multilingual AI Chatbot, cloud Voice /
+  call-center with global numbers, a collaborative Ticketing system, a WhatsApp
+  Business API, and outbound Voicebot / telemarketing. Sobot exposes developer
+  APIs for online chat sessions, agent and department management, and voice
+  extension administration, plus first-party SDKs for Android, iOS, HarmonyOS
+  NEXT, Flutter, and Web (JavaScript) so teams can embed chat, voice, and
+  ticketing into their own applications. The developer surface is documented on
+  a Mintlify docs site and secured with HTTP bearer tokens.
 url: https://raw.githubusercontent.com/api-evangelist/sobot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +33,134 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 25
+  pass: local-v1
 tags:
 - Company
 - Enterprise
-apis: []
+- Contact Center
+- Customer Service
+- Live Chat
+- Chatbot
+- Voice
+- Ticketing
+- WhatsApp
+- Omnichannel
+- Communications
+- Artificial Intelligence
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- aid: sobot:sobot-agent-api
+  name: Sobot Agent API
+  description: The Agent API from Sobot — 1 operation(s) for agent.
+  humanURL: https://docs.sobot.io/api-reference/chat_connect
+  baseURL: https://sg.sobot.io
+  tags:
+  - Agent
+  properties:
+  - type: OpenAPI
+    url: openapi/sobot-agent-api-openapi.yml
+  - type: Documentation
+    url: https://docs.sobot.io/api-reference/introduction
+- aid: sobot:sobot-basic-public-service-api
+  name: Sobot basic-public/service/坐席信息管理 API
+  description: >-
+    The basic-public/service/坐席信息管理 API from Sobot — 6 operation(s) for basic-public/service/坐席信息管理.
+  humanURL: https://docs.sobot.io/api-reference/chat_connect
+  baseURL: https://sg.sobot.io
+  tags:
+  - basic-public/service/坐席信息管理
+  properties:
+  - type: OpenAPI
+    url: openapi/sobot-basic-public-service-api-openapi.yml
+  - type: Documentation
+    url: https://docs.sobot.io/api-reference/introduction
+- aid: sobot:sobot-exts-api
+  name: Sobot Exts API
+  description: The Exts API from Sobot — 15 operation(s) for exts.
+  humanURL: https://docs.sobot.io/api-reference/chat_connect
+  baseURL: https://sg.sobot.io
+  tags:
+  - Exts
+  properties:
+  - type: OpenAPI
+    url: openapi/sobot-exts-api-openapi.yml
+  - type: Documentation
+    url: https://docs.sobot.io/api-reference/introduction
+- aid: sobot:sobot-user-api
+  name: Sobot User API
+  description: The User API from Sobot — 16 operation(s) for user.
+  humanURL: https://docs.sobot.io/api-reference/chat_connect
+  baseURL: https://sg.sobot.io
+  tags:
+  - User
+  properties:
+  - type: OpenAPI
+    url: openapi/sobot-user-api-openapi.yml
+  - type: Documentation
+    url: https://docs.sobot.io/api-reference/introduction
+common:
+- type: Authentication
+  url: authentication/sobot-authentication.yml
+- type: DomainSecurity
+  url: security/sobot-domain-security.yml
+- type: DeveloperPortal
+  url: https://docs.sobot.io/
+- type: Documentation
+  url: https://docs.sobot.io/api-reference/introduction
+- type: APIReference
+  url: https://docs.sobot.io/api-reference/introduction
+- type: GettingStarted
+  url: https://docs.sobot.io/
+- type: Support
+  url: https://help.sobot.io/
+- type: Blog
+  url: https://www.sobot.io/blog/
+- type: SignUp
+  url: https://sg.sobot.io/auth/sign_up
+- type: Login
+  url: https://sg.sobot.io/auth/sign_in
+- type: TermsOfService
+  url: https://www.sobot.io/terms-of-services
+- type: PrivacyPolicy
+  url: https://www.sobot.io/privacy-protection-policy
+- type: LLMsTxt
+  url: llms/sobot-llms.txt
+- type: Packages
+  url: packages/sobot-packages.yml
+- type: SDKs
+  url: packages/sobot-packages.yml
+- type: Conventions
+  url: conventions/sobot-conventions.yml
+- type: ErrorCatalog
+  url: errors/sobot-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/sobot-lifecycle.yml
+- type: ChangeLog
+  url: changelog/sobot-changelog.yml
+- type: Webhooks
+  url: asyncapi/sobot-voice-webhooks.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DataModel
+  url: data-model/sobot-data-model.yml
+- type: Conformance
+  url: conformance/sobot-conformance.yml
+- type: Components
+  url: components/sobot-components.yml
+- type: MCPServer
+  url: mcp/sobot-mcp.yml
+- type: Overlay
+  url: overlays/sobot-online-overlay.yaml
+- type: Overlay
+  url: overlays/sobot-basic-overlay.yaml
+- type: Overlay
+  url: overlays/sobot-voice-overlay.yaml

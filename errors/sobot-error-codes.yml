@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/ (online, basic, voice)
+format: status-envelope
+note: >-
+  Sobot APIs return errors through a status envelope rather than HTTP
+  problem+json. The published OpenAPI specs declare success responses only
+  (mostly 200 / "No Content") and do not enumerate a per-operation 4xx/5xx
+  error table, so individual error codes are not published in the spec. This
+  catalog records the error CHANNEL (the envelope fields that carry status)
+  derived from the spec component schemas; enrich with the docs error
+  reference when Sobot publishes one.
+envelopes:
+- apis: [Sobot Online Chat API]
+  fields:
+    code: retCode
+    message: retMsg
+  detail: >-
+    The /api/5/user/* online chat operations surface a retCode status string and
+    a retMsg human-readable message alongside any returned item/data.
+- apis: [Sobot Basic (Agent) API, Sobot Voice Extension API]
+  fields:
+    code: code
+    message: msg
+    payload: data
+  detail: >-
+    The agent and voice extension operations on sg.sobot.io return a code +
+    msg status pair with the result under data.
+problems: []

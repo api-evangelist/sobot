@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: generated
+source: openapi/ (online, basic, voice)
+skills:
+- file: sobot-online-chat.md
+  name: Handle a Sobot online chat conversation
+  api: openapi/sobot-online-openapi.json
+  operations: [chat_connect, chat_send, robot_chat, robot_feedback, out, get_detail_by_cid]
+- file: sobot-manage-agents.md
+  name: Provision and manage Sobot agents
+  api: openapi/sobot-basic-openapi.json
+  operations: [queryAgentInfoList, queryDepartAgentInfoList, saveAgentInfo, updateAgentInfo, batchUpdateAgentRole]
+- file: sobot-voice-extensions.md
+  name: Manage Sobot voice extensions
+  api: openapi/sobot-voice-openapi.json
+  operations: [search_extensions, add_extension, delete_extension, set_extension_password, extension_registration_status]

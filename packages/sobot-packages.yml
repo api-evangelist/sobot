@@ -1,0 +1,51 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sobot.io/llms.txt
+note: >-
+  Sobot ships first-party client SDKs for mobile and web, documented on the
+  Mintlify developer docs site (docs.sobot.io/build-apps). They are distributed
+  through Sobot's developer docs / downloads rather than public language
+  registries (npm/Maven/CocoaPods), so registry is recorded as first-party.
+packages:
+- language: java
+  platform: android
+  registry: first-party
+  name: Sobot Android SDK
+  url: https://docs.sobot.io/build-apps/apps/code
+  official: true
+- language: swift
+  platform: ios
+  registry: first-party
+  name: Sobot iOS SDK
+  url: https://docs.sobot.io/build-apps/apps/iOS/iOS%20SDK
+  official: true
+- language: arkts
+  platform: harmonyos
+  registry: first-party
+  name: Sobot HarmonyOS NEXT SDK
+  url: https://docs.sobot.io/build-apps/apps/images
+  official: true
+- language: dart
+  platform: flutter
+  registry: first-party
+  name: Sobot Flutter SDK
+  url: https://docs.sobot.io/build-apps/apps/settings
+  official: true
+- language: javascript
+  platform: web
+  registry: first-party
+  name: Sobot Online Web-JS SDK
+  url: https://docs.sobot.io/build-apps/web/webjssdk
+  official: true
+- language: javascript
+  platform: web
+  registry: first-party
+  name: Sobot Call Web-JS SDK
+  url: https://docs.sobot.io/build-apps/web/calljssdk
+  official: true
+- language: javascript
+  platform: web
+  registry: first-party
+  name: Sobot WorkOrder Web SDK
+  url: https://docs.sobot.io/build-apps/web/navigation
+  official: true

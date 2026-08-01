@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/ (online, basic, voice), https://docs.sobot.io/api-reference/introduction
+authentication:
+  style: http-bearer
+  header: Authorization
+  detail: HTTP Bearer access token on every request (see authentication/sobot-authentication.yml)
+content_type:
+  request: application/json
+  response: application/json
+base_url: https://sg.sobot.io
+regions:
+  note: >-
+    sg.sobot.io is the Singapore / international cluster used by the published
+    specs; Sobot also operates regional clusters for other geographies.
+response_envelope:
+  note: >-
+    Responses are wrapped in a status envelope observed in the OpenAPI component
+    schemas. The online chat API (/api/5/user/*) surfaces retCode / retMsg
+    status fields; the basic (agent) and voice APIs surface code / msg with a
+    data payload. Per-operation 4xx/5xx bodies are not enumerated in the
+    published specs.
+  online_fields: [retCode, retMsg]
+  basic_voice_fields: [code, msg, data]
+pagination:
+  style: page-number
+  params: [pageNo, pageSize]
+  detail: >-
+    Voice extension list endpoints (/exts/*/page/search, /exts/idle/page/search)
+    use page-number pagination with pageNo/pageSize request parameters.
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header/parameter is documented in the published specs.
+    The online chat_connect operation uses a caller-supplied partnerid as a
+    uniqueness key for the visitor session, but this is not a general
+    request-idempotency contract.
+versioning:
+  scheme: uri-path
+  detail: >-
+    The online chat API is versioned in the path (/api/5/user/...). The
+    basic/voice APIs are unversioned resource paths on sg.sobot.io.
+error_reference: errors/sobot-error-codes.yml
+lifecycle_reference: lifecycle/sobot-lifecycle.yml
+authentication_reference: authentication/sobot-authentication.yml

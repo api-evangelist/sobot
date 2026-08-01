@@ -1,0 +1,69 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: openapi/ (online, basic, voice)
+note: >-
+  No official hosted Sobot MCP server was found (no listing in the MCP registry,
+  npm @modelcontextprotocol, or the Sobot docs). This is a CANDIDATE tool list
+  derived one-tool-per-operation from Sobot's published OpenAPI. Operation ids
+  are not declared in the specs, so each tool is grounded on its HTTP path +
+  summary.
+server:
+  name: sobot
+  transport: http
+  url: null
+tools:
+- name: chat_connect
+  description: Connect a visitor and start an online chat session
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/chat_connect
+- name: chat_send
+  description: Send a message in an online chat session
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/chat_send
+- name: robot_chat
+  description: Run a bot (robot) chat turn
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/robot_chat
+- name: robot_feedback
+  description: Submit feedback on a robot chat answer
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/robot_feedback
+- name: end_session
+  description: End / leave an online chat session
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/out
+- name: query_session_detail
+  description: Get session detail by conversation id (cid)
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/get_detail_by_cid
+- name: query_cids
+  description: Query conversation ids
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/query_cids
+- name: get_offline_msg
+  description: Retrieve offline messages
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/offline_msg_data
+- name: query_agent
+  description: Query agents available for chat
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/query_agent
+- name: get_user_info
+  description: Query customer / user info
+  source_operation: openapi/sobot-online-openapi.json#POST /api/5/user/getUserInfo
+- name: list_agents
+  description: List agent (seat) information
+  source_operation: openapi/sobot-basic-openapi.json#GET /agent/queryAgentInfoList
+- name: create_agent
+  description: Create an agent (seat)
+  source_operation: openapi/sobot-basic-openapi.json#POST /agent/saveAgentInfo
+- name: update_agent
+  description: Edit an agent (seat)
+  source_operation: openapi/sobot-basic-openapi.json#POST /agent/updateAgentInfo
+- name: batch_update_agent_role
+  description: Batch-update agent roles
+  source_operation: openapi/sobot-basic-openapi.json#POST /agent/batchUpdateAgentRole
+- name: search_extensions
+  description: Page/search voice extension accounts
+  source_operation: openapi/sobot-voice-openapi.json#POST /exts/search
+- name: add_extension
+  description: Create a voice extension account (open API)
+  source_operation: openapi/sobot-voice-openapi.json#POST /api/exts/_add
+- name: delete_extension
+  description: Delete a voice extension
+  source_operation: openapi/sobot-voice-openapi.json#DELETE /exts/{id}
+- name: extension_registration_status
+  description: Query a voice extension's registration status
+  source_operation: openapi/sobot-voice-openapi.json#GET /exts/registered/{ext}/{phoneType}/{ip}

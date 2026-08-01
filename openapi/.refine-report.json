@@ -1,0 +1,37 @@
+{
+  "provider": "sobot",
+  "sources": [
+    "sobot-agent-api-openapi.yml",
+    "sobot-basic-public-service-api-openapi.yml",
+    "sobot-exts-api-openapi.yml",
+    "sobot-user-api-openapi.yml"
+  ],
+  "outputs": [
+    "sobot-agent-api-openapi.yml",
+    "sobot-basic-public-service-api-openapi.yml",
+    "sobot-exts-api-openapi.yml",
+    "sobot-user-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [
+    "sobot-agent-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABExt%C2%BB",
+    "sobot-basic-public-service-api-openapi.yml: dangling $ref: #/components/schemas/AgentQuery",
+    "sobot-basic-public-service-api-openapi.yml: dangling $ref: #/components/schemas/AgentVO",
+    "sobot-basic-public-service-api-openapi.yml: dangling $ref: #/components/schemas/GeneralVO%C2%ABAgentVO%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/BaseRequest",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ExtSearch",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABAgent%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABBatchDetail%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABExt%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABExtRegistered%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABInteger%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABMap%C2%ABObject%C2%BB%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABPageList%C2%ABExt%C2%BB%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABPageList%C2%ABExtVO%C2%BB%C2%BB",
+    "sobot-exts-api-openapi.yml: dangling $ref: #/components/schemas/ResponseResult%C2%ABPageList%C2%BB"
+  ],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

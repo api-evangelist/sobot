@@ -1,0 +1,13 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Sobot Basic (Agent) API
+  version: 1.0.0
+extends: openapi/sobot-basic-openapi.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-source: https://docs.sobot.io/api-reference/openapis/basic-openapi.json
+    x-apievangelist-title: Sobot Basic (Agent) API
+    x-apievangelist-note: >-
+      Harvested spec carries the Mintlify placeholder title "OpenAPI Plant
+      Store"; the real product is Sobot's agent/department management API.

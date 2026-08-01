@@ -1,0 +1,4197 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "OpenAPI Plant Store",
+        "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+        "license": {
+            "name": "MIT"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://sg.sobot.io"
+        }
+    ],
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
+    "paths": {
+        "/exts/search": {
+            "post": {
+                "summary": "分页条件查询分机帐号",
+                "deprecated": false,
+                "description": "分页条件查询分机帐号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABPageList%C2%ABExt%C2%BB%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "list": [
+                                                    {
+                                                        "creatorId": "",
+                                                        "creationTime": 0,
+                                                        "updateUserId": "",
+                                                        "updatedTime": 0,
+                                                        "pageSize": 0,
+                                                        "currPage": 0,
+                                                        "orderByName": "",
+                                                        "orderByASC": false,
+                                                        "partition": false,
+                                                        "startExt": "",
+                                                        "batchNum": 0,
+                                                        "enabled": 0,
+                                                        "extensions": {
+                                                            "": null
+                                                        },
+                                                        "companyId": "",
+                                                        "id": "",
+                                                        "ext": "",
+                                                        "password": "",
+                                                        "bindStatus": 0,
+                                                        "bindTime": 0,
+                                                        "agentUuid": "",
+                                                        "currentUsingAgentUuid": "",
+                                                        "agentName": "",
+                                                        "extType": 0,
+                                                        "domain": "",
+                                                        "ha1": "",
+                                                        "ha1b": "",
+                                                        "status": 0,
+                                                        "langCode": "",
+                                                        "langCodeTxt": ""
+                                                    }
+                                                ],
+                                                "currPage": 0,
+                                                "pageSize": 0,
+                                                "total": 0
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/idle/search": {
+            "post": {
+                "summary": "查询未被使用的分机帐号",
+                "deprecated": false,
+                "description": "查询未被使用的分机帐号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "path",
+                        "description": "公司ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/BaseRequest",
+                                "description": ""
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABAgent%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "agentID": "",
+                                                "agentName": "",
+                                                "agentNick": "",
+                                                "agentEmail": "",
+                                                "phone": "",
+                                                "currentPhoneType": "",
+                                                "telephone": "",
+                                                "qq": "",
+                                                "remarks": "",
+                                                "depart": "",
+                                                "departId": "",
+                                                "role": "",
+                                                "roleId": "",
+                                                "agentStatus": 0,
+                                                "loginStatus": 0,
+                                                "callStatus": 0,
+                                                "workStatus": 0,
+                                                "contact": "",
+                                                "wrapUpTime": 0,
+                                                "companyWrapUpTime": 0,
+                                                "wrapUpType": 0,
+                                                "lastLoginTime": 0,
+                                                "queueName": "",
+                                                "queueUuid": "",
+                                                "queueID": "",
+                                                "extId": "",
+                                                "ext": "",
+                                                "extType": "",
+                                                "loginStatusList": "",
+                                                "timeZoneId": "",
+                                                "timeZone": "",
+                                                "phoneTypes": [
+                                                    {
+                                                        "phoneType": "",
+                                                        "isDefault": false,
+                                                        "defaultPhoneType": false
+                                                    }
+                                                ],
+                                                "arrayDepartIds": [
+                                                    ""
+                                                ],
+                                                "keyWord": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/idle/page/search": {
+            "post": {
+                "summary": "分页查询未被使用的分机帐号",
+                "deprecated": false,
+                "description": "分页查询未被使用的分机帐号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "path",
+                        "description": "公司ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExtSearch",
+                                "description": ""
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABPageList%C2%ABExt%C2%BB%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "list": [
+                                                    {
+                                                        "creatorId": "",
+                                                        "creationTime": 0,
+                                                        "updateUserId": "",
+                                                        "updatedTime": 0,
+                                                        "pageSize": 0,
+                                                        "currPage": 0,
+                                                        "orderByName": "",
+                                                        "orderByASC": false,
+                                                        "partition": false,
+                                                        "startExt": "",
+                                                        "batchNum": 0,
+                                                        "enabled": 0,
+                                                        "extensions": {
+                                                            "": null
+                                                        },
+                                                        "companyId": "",
+                                                        "id": "",
+                                                        "ext": "",
+                                                        "password": "",
+                                                        "bindStatus": 0,
+                                                        "bindTime": 0,
+                                                        "agentUuid": "",
+                                                        "currentUsingAgentUuid": "",
+                                                        "agentName": "",
+                                                        "extType": 0,
+                                                        "domain": "",
+                                                        "ha1": "",
+                                                        "ha1b": "",
+                                                        "status": 0,
+                                                        "langCode": "",
+                                                        "langCodeTxt": ""
+                                                    }
+                                                ],
+                                                "currPage": 0,
+                                                "pageSize": 0,
+                                                "total": 0
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/detail": {
+            "post": {
+                "summary": "根据分机号座席信息查询分机详情",
+                "deprecated": false,
+                "description": "根据分机号座席信息查询分机详情",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "path",
+                        "description": "公司ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExtSearch",
+                                "description": ""
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/unbind": {
+            "get": {
+                "summary": "查询未绑定客服的分机列表",
+                "deprecated": false,
+                "description": "查询未绑定客服的分机列表",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/unbind/{agentUUID}": {
+            "get": {
+                "summary": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+                "deprecated": false,
+                "description": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "agentUUID",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/unbind/page/{agentUUID}": {
+            "get": {
+                "summary": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+                "deprecated": false,
+                "description": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "agentUUID",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "example": 1,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "example": 10,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABPageList%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "list": [
+                                                    {}
+                                                ],
+                                                "currPage": 0,
+                                                "pageSize": 0,
+                                                "total": 0
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/count": {
+            "get": {
+                "summary": "查询当前公司下的分机数量",
+                "deprecated": false,
+                "description": "查询当前公司下的分机数量",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABInteger%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": 0,
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts": {
+            "post": {
+                "summary": "新建分机帐号-------------接口弃用",
+                "deprecated": false,
+                "description": "新建分机帐号-------------接口弃用",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            },
+            "patch": {
+                "summary": "批量新建分机",
+                "deprecated": false,
+                "description": "批量新建分机",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABBatchDetail%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "successCount": 0,
+                                                "failedCount": 0,
+                                                "details": [
+                                                    ""
+                                                ]
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/{id}": {
+            "put": {
+                "summary": "修改分机密码",
+                "deprecated": false,
+                "description": "修改分机密码",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            },
+            "delete": {
+                "summary": "删除分机",
+                "deprecated": false,
+                "description": "删除分机",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/registered/{ext}/{phoneType}/{ip}": {
+            "get": {
+                "summary": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+                "deprecated": false,
+                "description": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "ext",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "phoneType",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "user",
+                        "in": "header",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExtRegistered%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "success": false,
+                                                "ext": "",
+                                                "user": "",
+                                                "registeredSize": 0,
+                                                "size": 0
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/api/exts/_search": {
+            "post": {
+                "summary": "对外接口 api:查询分机列表",
+                "deprecated": false,
+                "description": "对外接口 api:查询分机列表",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "example": [],
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "operatorUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tempId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "timezoneid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Company-Id",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABPageList%C2%ABExtVO%C2%BB%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "list": [
+                                                    {
+                                                        "ext": "",
+                                                        "password": "",
+                                                        "bindStatus": 0,
+                                                        "bindTime": 0,
+                                                        "agentUUID": "",
+                                                        "agentName": "",
+                                                        "langCode": "",
+                                                        "langCodeTxt": ""
+                                                    }
+                                                ],
+                                                "currPage": 0,
+                                                "pageSize": 0,
+                                                "total": 0
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/langCode": {
+            "put": {
+                "summary": "修改分机语音编码",
+                "deprecated": false,
+                "description": "修改分机语音编码",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "creatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "updateUserId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "updatedTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "currPage",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "orderByName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderByASC",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "partition",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "startExt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "batchNum",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "enabled",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "extensions.key",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "bindStatus",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "bindTime",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "agentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "currentUsingAgentUuid",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentName",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "extType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ha1b",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "langCode",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/agent/exts/langCode": {
+            "put": {
+                "summary": "修改分机语音编码",
+                "deprecated": false,
+                "description": "修改分机语音编码",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "agent",
+                        "in": "query",
+                        "description": "座席(座席工号或座席id)",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentType",
+                        "in": "query",
+                        "description": "座席类型(1表示座席id；0或不传值表示座席工号)",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "operator",
+                        "in": "query",
+                        "description": "操作人",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Company-Id",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABExt%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0,
+                                                "pageSize": 0,
+                                                "currPage": 0,
+                                                "orderByName": "",
+                                                "orderByASC": false,
+                                                "partition": false,
+                                                "startExt": "",
+                                                "batchNum": 0,
+                                                "enabled": 0,
+                                                "extensions": {
+                                                    "": null
+                                                },
+                                                "companyId": "",
+                                                "id": "",
+                                                "ext": "",
+                                                "password": "",
+                                                "bindStatus": 0,
+                                                "bindTime": 0,
+                                                "agentUuid": "",
+                                                "currentUsingAgentUuid": "",
+                                                "agentName": "",
+                                                "extType": 0,
+                                                "domain": "",
+                                                "ha1": "",
+                                                "ha1b": "",
+                                                "status": 0,
+                                                "langCode": "",
+                                                "langCodeTxt": ""
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/api/exts/_add": {
+            "post": {
+                "summary": "开放接口新建分机账号",
+                "deprecated": false,
+                "description": "开放接口新建分机账号",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "agentID",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "agentType",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ext",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "langCodeTxt",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "header",
+                        "description": "公司ID",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult%C2%ABMap%C2%ABObject%C2%BB%C2%BB"
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {
+                                                "": {}
+                                            },
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        },
+        "/exts/{ext}/language": {
+            "get": {
+                "summary": "查询分机主语言",
+                "deprecated": false,
+                "description": "查询分机主语言",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "ext",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "",
+                        "example": "{{authorization}}",
+                        "schema": {
+                            "type": "string",
+                            "default": "{{authorization}}"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseResult",
+                                    "description": ""
+                                },
+                                "examples": {
+                                    "1": {
+                                        "summary": "成功示例",
+                                        "value": {
+                                            "apiVersion": "",
+                                            "status": "",
+                                            "code": 0,
+                                            "message": "",
+                                            "reason": "",
+                                            "kind": "",
+                                            "metaData": {
+                                                "creatorId": "",
+                                                "creationTime": 0,
+                                                "updateUserId": "",
+                                                "updatedTime": 0
+                                            },
+                                            "data": {},
+                                            "retMsg": "",
+                                            "retCode": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "headers": {}
+                    }
+                },
+                "security": []
+            }
+        }
+    },
+    "webhooks": {
+        "/plant/webhook": {
+            "post": {
+                "description": "Information about a new plant added to the store",
+                "requestBody": {
+                    "description": "Plant added to the store",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/NewPlant"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Return a 200 status to indicate that the data was received successfully"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {},
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer"
+            }
+        }
+    }
+}
