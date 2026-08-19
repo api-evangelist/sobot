@@ -1,0 +1,75 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenAPI Plant Store Agent API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Agent",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "修改分机语音编码",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://sg.sobot.io/agent/exts/langCode",
+            "headers": [
+              {
+                "name": "Company-Id",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "agent",
+                "value": "",
+                "type": "query",
+                "description": "座席(座席工号或座席id)"
+              },
+              {
+                "name": "agentType",
+                "value": "",
+                "type": "query",
+                "description": "座席类型(1表示座席id；0或不传值表示座席工号)"
+              },
+              {
+                "name": "operator",
+                "value": "",
+                "type": "query",
+                "description": "操作人"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "修改分机语音编码"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,315 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenAPI Plant Store Agent User API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "User",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "chat_connect",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/chat_connect",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "chat_connect"
+        },
+        {
+          "info": {
+            "name": "chat_send",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/chat_send",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "chat_send"
+        },
+        {
+          "info": {
+            "name": "robot_chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/robot_chat",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "robot_chat"
+        },
+        {
+          "info": {
+            "name": "robot_feedback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/robot_feedback",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "robot_feedback"
+        },
+        {
+          "info": {
+            "name": "comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/comment",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "comment"
+        },
+        {
+          "info": {
+            "name": "out",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/out",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "out"
+        },
+        {
+          "info": {
+            "name": "offline_msg_data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/offline_msg_data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "offline_msg_data"
+        },
+        {
+          "info": {
+            "name": "query_cids",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/query_cids",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "query_cids"
+        },
+        {
+          "info": {
+            "name": "get_detail_by_cid",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/get_detail_by_cid",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "get_detail_by_cid"
+        },
+        {
+          "info": {
+            "name": "admin_is_work",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/admin_is_work",
+            "params": [
+              {
+                "name": "groupid",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "admin_is_work"
+        },
+        {
+          "info": {
+            "name": "get_once_data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/get_once_data"
+          },
+          "docs": "get_once_data"
+        },
+        {
+          "info": {
+            "name": "query_group",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/query_group"
+          },
+          "docs": "query_group"
+        },
+        {
+          "info": {
+            "name": "query_agent",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/query_agent",
+            "params": [
+              {
+                "name": "visitorid",
+                "value": "",
+                "type": "query",
+                "description": "访客ID,由智齿生成，商户内唯一"
+              },
+              {
+                "name": "partnerid",
+                "value": "",
+                "type": "query",
+                "description": "对接ID,需要保证唯一性"
+              },
+              {
+                "name": "from",
+                "value": "",
+                "type": "query",
+                "description": "用户来源：0-开放平台，1-pc/h5/sdk,2-微信"
+              },
+              {
+                "name": "cid",
+                "value": "",
+                "type": "query",
+                "description": "会话ID"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query",
+                "description": "时区"
+              },
+              {
+                "name": "name_flag",
+                "value": "",
+                "type": "query",
+                "description": "是否需要返回用户昵称，1：需要，0：不需要"
+              }
+            ]
+          },
+          "docs": "query_agent"
+        },
+        {
+          "info": {
+            "name": "只针对接口对接用户",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/query_session_status",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "只针对接口对接用户"
+        },
+        {
+          "info": {
+            "name": "查询用户信息",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/5/user/getUserInfo",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "查询用户信息"
+        },
+        {
+          "info": {
+            "name": "querySuggest",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/api/5/user/query_suggest",
+            "params": [
+              {
+                "name": "question",
+                "value": "",
+                "type": "query",
+                "description": "待分词问题"
+              },
+              {
+                "name": "partnerid",
+                "value": "",
+                "type": "query",
+                "description": "访客id?"
+              },
+              {
+                "name": "num",
+                "value": "",
+                "type": "query",
+                "description": "分词联想数量"
+              },
+              {
+                "name": "robot_flag",
+                "value": "",
+                "type": "query",
+                "description": "机器人id"
+              }
+            ]
+          },
+          "docs": "querySuggest"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

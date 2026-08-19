@@ -1,0 +1,1603 @@
+{
+  "item": [
+    {
+      "id": "743e9e2a-e9df-490c-a6af-2c942008bd1e",
+      "name": "User",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0b335413-ebaf-45b0-ad1d-7605b82ab461",
+          "name": "chat_connect",
+          "request": {
+            "name": "chat_connect",
+            "description": {
+              "content": "chat_connect",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "chat_connect"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\",\n  \"source\": \"<integer>\",\n  \"channel_flag\": \"<integer>\",\n  \"user_nick\": \"<string>\",\n  \"user_name\": \"<string>\",\n  \"user_tels\": \"<string>\",\n  \"user_emails\": \"<string>\",\n  \"user_img\": \"<string>\",\n  \"params\": \"<string>\",\n  \"agentid\": \"<string>\",\n  \"tran_flag\": \"<integer>\",\n  \"groupid\": \"<string>\",\n  \"channel_id\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "aa87413c-2266-40bb-a1bb-8ac0752c7132",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "chat_connect"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\",\n  \"source\": \"<integer>\",\n  \"channel_flag\": \"<integer>\",\n  \"user_nick\": \"<string>\",\n  \"user_name\": \"<string>\",\n  \"user_tels\": \"<string>\",\n  \"user_emails\": \"<string>\",\n  \"user_img\": \"<string>\",\n  \"params\": \"<string>\",\n  \"agentid\": \"<string>\",\n  \"tran_flag\": \"<integer>\",\n  \"groupid\": \"<string>\",\n  \"channel_id\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "934c9850-f6f9-4930-ab14-eb4233ecf622",
+          "name": "chat_send",
+          "request": {
+            "name": "chat_send",
+            "description": {
+              "content": "chat_send",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "chat_send"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\",\n  \"content\": \"<string>\",\n  \"msg_type\": \"<string>\",\n  \"appoint_cid\": \"<string>\",\n  \"appoint_msgid\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "fd71b75a-37c2-418e-87bd-4ac6096a412b",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "chat_send"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\",\n  \"content\": \"<string>\",\n  \"msg_type\": \"<string>\",\n  \"appoint_cid\": \"<string>\",\n  \"appoint_msgid\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8dac5f52-e831-40f5-bac0-5ca94192885e",
+          "name": "robot_chat",
+          "request": {
+            "name": "robot_chat",
+            "description": {
+              "content": "robot_chat",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "robot_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\",\n  \"question\": \"<string>\",\n  \"user_nick\": \"<string>\",\n  \"source\": \"<string>\",\n  \"robot_flag\": \"<string>\",\n  \"question_flag\": \"<string>\",\n  \"request_text\": \"<string>\",\n  \"channel_flag\": \"<string>\",\n  \"refer_num\": \"<string>\",\n  \"msg_type\": \"<integer>\",\n  \"lan_flag\": \"<integer>\",\n  \"reception_version\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "9bc20d6e-787e-4d3e-a9c9-07f0ae546526",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "robot_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\",\n  \"question\": \"<string>\",\n  \"user_nick\": \"<string>\",\n  \"source\": \"<string>\",\n  \"robot_flag\": \"<string>\",\n  \"question_flag\": \"<string>\",\n  \"request_text\": \"<string>\",\n  \"channel_flag\": \"<string>\",\n  \"refer_num\": \"<string>\",\n  \"msg_type\": \"<integer>\",\n  \"lan_flag\": \"<integer>\",\n  \"reception_version\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c3385022-0961-4e92-ac08-7a1b7a3678b8",
+          "name": "robot_feedback",
+          "request": {
+            "name": "robot_feedback",
+            "description": {
+              "content": "robot_feedback",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "robot_feedback"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"docid\": \"<string>\",\n  \"doc_name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"robot_flag\": \"<string>\",\n  \"msgid\": \"<string>\",\n  \"ruleid\": \"<string>\",\n  \"answerid\": \"<string>\",\n  \"answer\": \"<string>\",\n  \"gpt_answer_type\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "12cf6f10-44ff-4428-b577-31556432df67",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "robot_feedback"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"docid\": \"<string>\",\n  \"doc_name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"robot_flag\": \"<string>\",\n  \"msgid\": \"<string>\",\n  \"ruleid\": \"<string>\",\n  \"answerid\": \"<string>\",\n  \"answer\": \"<string>\",\n  \"gpt_answer_type\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f94129c9-5ade-48e4-b5b9-762ecc60a02b",
+          "name": "comment",
+          "request": {
+            "name": "comment",
+            "description": {
+              "content": "comment",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "comment"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\",\n  \"type\": \"<string>\",\n  \"score\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"remark\": \"<string>\",\n  \"comment_type\": \"<string>\",\n  \"solved\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a9a464fb-85b1-4239-a4f7-b4f46aba89e3",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "comment"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\",\n  \"type\": \"<string>\",\n  \"score\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"remark\": \"<string>\",\n  \"comment_type\": \"<string>\",\n  \"solved\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "436f9f85-32d8-45e0-b044-1bf304b4b63b",
+          "name": "out",
+          "request": {
+            "name": "out",
+            "description": {
+              "content": "out",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "out"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "0e3e87a0-2e38-40a3-af4e-51649928defb",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "out"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4abd35c7-80f4-4659-b8c1-44757ac132bd",
+          "name": "offline_msg_data",
+          "request": {
+            "name": "offline_msg_data",
+            "description": {
+              "content": "offline_msg_data",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "offline_msg_data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "d1cd5811-fe6e-432f-b55a-fdd920896738",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "offline_msg_data"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bd6e0f16-ed2f-4423-a781-6f08da1f735e",
+          "name": "query_cids",
+          "request": {
+            "name": "query_cids",
+            "description": {
+              "content": "query_cids",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "query_cids"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"start_time\": \"<string>\",\n  \"end_time\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "16fc8124-2a38-4e8e-af8d-3803d8f399b4",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "query_cids"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"start_time\": \"<string>\",\n  \"end_time\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "626abb30-0a04-48b5-b831-25ffc94bbfc7",
+          "name": "get_detail_by_cid",
+          "request": {
+            "name": "get_detail_by_cid",
+            "description": {
+              "content": "get_detail_by_cid",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "get_detail_by_cid"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"name_flag\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "4d7f7886-ad2b-498e-bee5-663acb4a467f",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "get_detail_by_cid"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"visitorid\": \"<string>\",\n  \"partnerid\": \"<string>\",\n  \"from\": 0,\n  \"cid\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"name_flag\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8160bc0e-8fc9-45b8-a792-54c600daa352",
+          "name": "admin_is_work",
+          "request": {
+            "name": "admin_is_work",
+            "description": {
+              "content": "admin_is_work",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "admin_is_work"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "groupid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "52d8833d-27e3-4c8d-98cf-b455576f0cf6",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "admin_is_work"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "groupid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ff4959e6-40ea-4e02-92ca-b92a653f6783",
+          "name": "get_once_data",
+          "request": {
+            "name": "get_once_data",
+            "description": {
+              "content": "get_once_data",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "get_once_data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "02fa5333-e108-4140-b007-25ff777ed6e5",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "get_once_data"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b15b11d-8ad2-4d0d-8eb8-02d9f6ccec09",
+          "name": "query_group",
+          "request": {
+            "name": "query_group",
+            "description": {
+              "content": "query_group",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "query_group"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "165b3b5f-69d3-49c0-9386-84aca99ba1ba",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "query_group"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "67c07010-9569-4c87-b0f6-a74c4aaf3c88",
+          "name": "query_agent",
+          "request": {
+            "name": "query_agent",
+            "description": {
+              "content": "query_agent",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "query_agent"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "visitorid",
+                  "value": "<string>",
+                  "description": "访客ID,由智齿生成，商户内唯一"
+                },
+                {
+                  "disabled": false,
+                  "key": "partnerid",
+                  "value": "<string>",
+                  "description": "对接ID,需要保证唯一性"
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "0",
+                  "description": "用户来源：0-开放平台，1-pc/h5/sdk,2-微信"
+                },
+                {
+                  "disabled": false,
+                  "key": "cid",
+                  "value": "<string>",
+                  "description": "会话ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>",
+                  "description": "时区"
+                },
+                {
+                  "disabled": false,
+                  "key": "name_flag",
+                  "value": "<integer>",
+                  "description": "是否需要返回用户昵称，1：需要，0：不需要"
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3307d598-ca0f-4c87-a816-2c099ec3d666",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "query_agent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "visitorid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "partnerid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "from",
+                      "value": "0"
+                    },
+                    {
+                      "key": "cid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "name_flag",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "94ed6110-d359-46c4-afa2-e8b0ba1acb34",
+          "name": "只针对接口对接用户",
+          "request": {
+            "name": "只针对接口对接用户",
+            "description": {
+              "content": "只针对接口对接用户",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "query_session_status"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"partnerid\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "60696e26-498b-42e5-a4db-5f5e2013717d",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "query_session_status"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"partnerid\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "22f4777a-f604-4cd0-931d-cd66b2b85765",
+          "name": "查询用户信息",
+          "request": {
+            "name": "查询用户信息",
+            "description": {
+              "content": "查询用户信息",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "getUserInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"uid\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "ff76de17-28c3-4918-a6ba-451713c5906e",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "getUserInfo"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"uid\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "038d532a-a7f5-458f-9f77-a096d2288a7c",
+          "name": "querySuggest",
+          "request": {
+            "name": "querySuggest",
+            "description": {
+              "content": "querySuggest",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "5",
+                "user",
+                "query_suggest"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "question",
+                  "value": "<string>",
+                  "description": "待分词问题"
+                },
+                {
+                  "disabled": false,
+                  "key": "partnerid",
+                  "value": "<string>",
+                  "description": "访客id?"
+                },
+                {
+                  "disabled": false,
+                  "key": "num",
+                  "value": "<integer>",
+                  "description": "分词联想数量"
+                },
+                {
+                  "disabled": false,
+                  "key": "robot_flag",
+                  "value": "<integer>",
+                  "description": "机器人id"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "21909edb-e965-4eff-bf1a-2350091edf3f",
+              "name": "void",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "5",
+                    "user",
+                    "query_suggest"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "question",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "partnerid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "num",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "robot_flag",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"page_no\": 8644,\n  \"page_count\": 369,\n  \"total_count\": 8015,\n  \"page_size\": 5978,\n  \"items\": [\n    {\n      \"key\": \"string\"\n    },\n    {\n      \"key\": \"string\"\n    }\n  ],\n  \"item\": {},\n  \"ret_code\": \"string\",\n  \"ret_msg\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://sg.sobot.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5a0c9585-895d-4d33-a671-9ba6d869f5ca",
+    "name": "OpenAPI Plant Store Agent User API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+      "type": "text/plain"
+    }
+  }
+}

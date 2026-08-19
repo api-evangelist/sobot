@@ -1,0 +1,321 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenAPI Plant Store Agent basic-public/service/坐席信息管理 API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "basic-public/service/坐席信息管理",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "查询部门客服信息",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/agent/queryDepartAgentInfoList",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "查询部门客服信息"
+        },
+        {
+          "info": {
+            "name": "查询客服信息列表",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/agent/queryAgentInfoList",
+            "params": [
+              {
+                "name": "serviceId",
+                "value": "",
+                "type": "query",
+                "description": "客服ID"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query",
+                "description": "公司ID"
+              },
+              {
+                "name": "serviceName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "serviceNick",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "serviceStatus",
+                "value": "",
+                "type": "query",
+                "description": "客服状态 0未激活，1启用中，2平台管控，9停用，-1删除"
+              },
+              {
+                "name": "phoneNo",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "serviceEmail",
+                "value": "",
+                "type": "query",
+                "description": "客服邮箱"
+              },
+              {
+                "name": "cusRoleId",
+                "value": "",
+                "type": "query",
+                "description": "客服角色ID"
+              },
+              {
+                "name": "roleId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "userId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "groupId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "groupIds",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "cusRoleName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "serviceNo",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "departId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "managerFlag",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "qywxBindStatus",
+                "value": "",
+                "type": "query",
+                "description": "客服绑定状态 0和2或者NULL表示未绑定，1表示绑定"
+              },
+              {
+                "name": "productIdList",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "queryContent",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "queryType",
+                "value": "",
+                "type": "query",
+                "description": "查询类型 1 所有 2 组织架构"
+              },
+              {
+                "name": "departFlag",
+                "value": "",
+                "type": "query",
+                "description": "查询部门数据  1 当前部门"
+              },
+              {
+                "name": "serviceIdList",
+                "value": "",
+                "type": "query",
+                "description": "一批客服ID"
+              },
+              {
+                "name": "departIdList",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentIdList",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "roleIdList",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "userIdList",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageNo",
+                "value": "",
+                "type": "query",
+                "description": "页数"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query",
+                "description": "每页记录数"
+              },
+              {
+                "name": "qywxUserId",
+                "value": "",
+                "type": "query",
+                "description": "企业微信userId"
+              },
+              {
+                "name": "qywxUserIdList",
+                "value": "",
+                "type": "query",
+                "description": "企微userId列表"
+              },
+              {
+                "name": "sortCol",
+                "value": "",
+                "type": "query",
+                "description": "排序字段"
+              },
+              {
+                "name": "sortSeq",
+                "value": "",
+                "type": "query",
+                "description": "排序结果，降序desc，还是升序asc"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query",
+                "description": "多语言"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "flag",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query",
+                "description": "时区"
+              },
+              {
+                "name": "groupIdList",
+                "value": "",
+                "type": "query",
+                "description": "客服组id list"
+              },
+              {
+                "name": "delDepartFlag",
+                "value": "",
+                "type": "query",
+                "description": "查询删除部门信息  1查询"
+              }
+            ]
+          },
+          "docs": "查询客服信息列表"
+        },
+        {
+          "info": {
+            "name": "查询客服信息列表",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/agent/queryAgentInfoListByDepartIds",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "查询客服信息列表"
+        },
+        {
+          "info": {
+            "name": "创建客服",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/agent/saveAgentInfo",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "创建客服"
+        },
+        {
+          "info": {
+            "name": "编辑客服",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/agent/updateAgentInfo",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "编辑客服"
+        },
+        {
+          "info": {
+            "name": "批量修改客服角色",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/agent/batchUpdateAgentRole",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "批量修改客服角色"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

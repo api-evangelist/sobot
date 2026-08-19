@@ -1,0 +1,4341 @@
+{
+  "item": [
+    {
+      "id": "c329103f-f4aa-4d69-97c0-1b7506430597",
+      "name": "Exts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8c97732f-b2bf-4b0f-94d6-e11e61938b20",
+          "name": "分页条件查询分机帐号",
+          "request": {
+            "name": "分页条件查询分机帐号",
+            "description": {
+              "content": "分页条件查询分机帐号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cdcda1e7-7876-40b4-9e88-8d5edb20fa3b",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"list\": [\n      {\n        \"creatorId\": \"\",\n        \"creationTime\": 0,\n        \"updateUserId\": \"\",\n        \"updatedTime\": 0,\n        \"pageSize\": 0,\n        \"currPage\": 0,\n        \"orderByName\": \"\",\n        \"orderByASC\": false,\n        \"partition\": false,\n        \"startExt\": \"\",\n        \"batchNum\": 0,\n        \"enabled\": 0,\n        \"extensions\": {\n          \"\": null\n        },\n        \"companyId\": \"\",\n        \"id\": \"\",\n        \"ext\": \"\",\n        \"password\": \"\",\n        \"bindStatus\": 0,\n        \"bindTime\": 0,\n        \"agentUuid\": \"\",\n        \"currentUsingAgentUuid\": \"\",\n        \"agentName\": \"\",\n        \"extType\": 0,\n        \"domain\": \"\",\n        \"ha1\": \"\",\n        \"ha1b\": \"\",\n        \"status\": 0,\n        \"langCode\": \"\",\n        \"langCodeTxt\": \"\"\n      }\n    ],\n    \"currPage\": 0,\n    \"pageSize\": 0,\n    \"total\": 0\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "29c622ac-4495-4d09-a718-356d87aa228e",
+          "name": "查询未被使用的分机帐号",
+          "request": {
+            "name": "查询未被使用的分机帐号",
+            "description": {
+              "content": "查询未被使用的分机帐号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "idle",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "companyId",
+                  "description": "(Required) 公司ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "592e56c0-3d6d-4ab3-a737-2e2754b95382",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "idle",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "companyId",
+                      "description": "(Required) 公司ID"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"agentID\": \"\",\n    \"agentName\": \"\",\n    \"agentNick\": \"\",\n    \"agentEmail\": \"\",\n    \"phone\": \"\",\n    \"currentPhoneType\": \"\",\n    \"telephone\": \"\",\n    \"qq\": \"\",\n    \"remarks\": \"\",\n    \"depart\": \"\",\n    \"departId\": \"\",\n    \"role\": \"\",\n    \"roleId\": \"\",\n    \"agentStatus\": 0,\n    \"loginStatus\": 0,\n    \"callStatus\": 0,\n    \"workStatus\": 0,\n    \"contact\": \"\",\n    \"wrapUpTime\": 0,\n    \"companyWrapUpTime\": 0,\n    \"wrapUpType\": 0,\n    \"lastLoginTime\": 0,\n    \"queueName\": \"\",\n    \"queueUuid\": \"\",\n    \"queueID\": \"\",\n    \"extId\": \"\",\n    \"ext\": \"\",\n    \"extType\": \"\",\n    \"loginStatusList\": \"\",\n    \"timeZoneId\": \"\",\n    \"timeZone\": \"\",\n    \"phoneTypes\": [\n      {\n        \"phoneType\": \"\",\n        \"isDefault\": false,\n        \"defaultPhoneType\": false\n      }\n    ],\n    \"arrayDepartIds\": [\n      \"\"\n    ],\n    \"keyWord\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8e7ecb7a-092f-4123-bc1b-c6da14e2eb04",
+          "name": "分页查询未被使用的分机帐号",
+          "request": {
+            "name": "分页查询未被使用的分机帐号",
+            "description": {
+              "content": "分页查询未被使用的分机帐号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "idle",
+                "page",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "companyId",
+                  "description": "(Required) 公司ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "82c7df8b-4617-4053-8c61-1a0ac0c9337b",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "idle",
+                    "page",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "companyId",
+                      "description": "(Required) 公司ID"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"list\": [\n      {\n        \"creatorId\": \"\",\n        \"creationTime\": 0,\n        \"updateUserId\": \"\",\n        \"updatedTime\": 0,\n        \"pageSize\": 0,\n        \"currPage\": 0,\n        \"orderByName\": \"\",\n        \"orderByASC\": false,\n        \"partition\": false,\n        \"startExt\": \"\",\n        \"batchNum\": 0,\n        \"enabled\": 0,\n        \"extensions\": {\n          \"\": null\n        },\n        \"companyId\": \"\",\n        \"id\": \"\",\n        \"ext\": \"\",\n        \"password\": \"\",\n        \"bindStatus\": 0,\n        \"bindTime\": 0,\n        \"agentUuid\": \"\",\n        \"currentUsingAgentUuid\": \"\",\n        \"agentName\": \"\",\n        \"extType\": 0,\n        \"domain\": \"\",\n        \"ha1\": \"\",\n        \"ha1b\": \"\",\n        \"status\": 0,\n        \"langCode\": \"\",\n        \"langCodeTxt\": \"\"\n      }\n    ],\n    \"currPage\": 0,\n    \"pageSize\": 0,\n    \"total\": 0\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8cf51473-ae73-4036-ad59-a2b7abfa0f09",
+          "name": "根据分机号座席信息查询分机详情",
+          "request": {
+            "name": "根据分机号座席信息查询分机详情",
+            "description": {
+              "content": "根据分机号座席信息查询分机详情",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "detail"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "companyId",
+                  "description": "(Required) 公司ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "676e060f-7a5d-45c4-abcf-de5b130d0b22",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "detail"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "companyId",
+                      "description": "(Required) 公司ID"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbc26b47-fd70-45d3-b59b-616546741f08",
+          "name": "查询未绑定客服的分机列表",
+          "request": {
+            "name": "查询未绑定客服的分机列表",
+            "description": {
+              "content": "查询未绑定客服的分机列表",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "unbind"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b6fd4add-8827-46bf-b673-f9f6597d19ba",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "unbind"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "aaeb1ae3-0545-4a68-bb70-0390372eff1d",
+          "name": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+          "request": {
+            "name": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+            "description": {
+              "content": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "unbind",
+                ":agentUUID"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "agentUUID",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ea1564ca-95f3-4962-a40c-31328c6aa9e3",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "unbind",
+                    ":agentUUID"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "agentUUID",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "92b2fea2-6ccd-4c6c-9d7a-9cc0e69b3c29",
+          "name": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+          "request": {
+            "name": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+            "description": {
+              "content": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "unbind",
+                "page",
+                ":agentUUID"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "agentUUID",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "406d9120-765d-4788-8f33-22aa9ec32f0c",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "unbind",
+                    "page",
+                    ":agentUUID"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "1"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "10"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "agentUUID",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"list\": [\n      {}\n    ],\n    \"currPage\": 0,\n    \"pageSize\": 0,\n    \"total\": 0\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "66ae576d-0614-465b-a7fe-4dfcf0be5aa8",
+          "name": "查询当前公司下的分机数量",
+          "request": {
+            "name": "查询当前公司下的分机数量",
+            "description": {
+              "content": "查询当前公司下的分机数量",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "count"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5aa530dd-1466-4432-9c2e-e56622be3555",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "count"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": 0,\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "53386928-0f08-4eec-b14a-3afdccb0e907",
+          "name": "新建分机帐号-------------接口弃用",
+          "request": {
+            "name": "新建分机帐号-------------接口弃用",
+            "description": {
+              "content": "新建分机帐号-------------接口弃用",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0f526604-735f-40b6-9c37-8bcf638da67c",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "192a2144-aa18-4f32-aca5-a26ae2cd41a6",
+          "name": "批量新建分机",
+          "request": {
+            "name": "批量新建分机",
+            "description": {
+              "content": "批量新建分机",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6739106c-ce02-4991-acce-880fecb6ebc8",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"successCount\": 0,\n    \"failedCount\": 0,\n    \"details\": [\n      \"\"\n    ]\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "97a6a2db-667b-44d5-ab09-6f71c9fe2cfe",
+          "name": "修改分机密码",
+          "request": {
+            "name": "修改分机密码",
+            "description": {
+              "content": "修改分机密码",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8b0f6a1f-927d-4691-b14f-8319ac50bd16",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "13f0d93d-b538-4b5a-adec-e432e7a8d4e4",
+          "name": "删除分机",
+          "request": {
+            "name": "删除分机",
+            "description": {
+              "content": "删除分机",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "685cf91c-2a65-476f-a813-99c7ba4b3c35",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6ddb4863-f22d-4111-821b-efea96956450",
+          "name": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+          "request": {
+            "name": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+            "description": {
+              "content": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "registered",
+                ":ext",
+                ":phoneType",
+                ":ip"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "ext",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "phoneType",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "ip",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "user",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "19cb960e-6fc3-4450-89fc-5da66dc69f9e",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "registered",
+                    ":ext",
+                    ":phoneType",
+                    ":ip"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "ext",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "phoneType",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "ip",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "user",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"success\": false,\n    \"ext\": \"\",\n    \"user\": \"\",\n    \"registeredSize\": 0,\n    \"size\": 0\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8a5a0a41-77b7-47c7-989c-7963dd98711f",
+          "name": "对外接口 api:查询分机列表",
+          "request": {
+            "name": "对外接口 api:查询分机列表",
+            "description": {
+              "content": "对外接口 api:查询分机列表",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "exts",
+                "_search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operatorUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tempId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezoneid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "Company-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ad4b0381-427f-4122-a7c1-2e023022d499",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "exts",
+                    "_search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "operatorUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tempId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "timezoneid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "Company-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"list\": [\n      {\n        \"ext\": \"\",\n        \"password\": \"\",\n        \"bindStatus\": 0,\n        \"bindTime\": 0,\n        \"agentUUID\": \"\",\n        \"agentName\": \"\",\n        \"langCode\": \"\",\n        \"langCodeTxt\": \"\"\n      }\n    ],\n    \"currPage\": 0,\n    \"pageSize\": 0,\n    \"total\": 0\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8ec80887-5924-4539-bfd5-44e5f9c839af",
+          "name": "修改分机语音编码",
+          "request": {
+            "name": "修改分机语音编码",
+            "description": {
+              "content": "修改分机语音编码",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                "langCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "creatorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "creationTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updateUserId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "updatedTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currPage",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orderByASC",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "partition",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "startExt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "batchNum",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "enabled",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extensions.key",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindStatus",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "bindTime",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "currentUsingAgentUuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "extType",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "domain",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ha1b",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5c001752-2078-43ea-a34d-c68ef0c925b6",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    "langCode"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "creatorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "creationTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "updateUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "updatedTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "currPage",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "orderByName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orderByASC",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "partition",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "startExt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "batchNum",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "enabled",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "extensions.key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "bindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "bindTime",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "agentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "currentUsingAgentUuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "domain",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ha1b",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "langCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0d1966ae-6775-4dc6-9e52-3bdff31f3f84",
+          "name": "开放接口新建分机账号",
+          "request": {
+            "name": "开放接口新建分机账号",
+            "description": {
+              "content": "开放接口新建分机账号",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "exts",
+                "_add"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "agentID",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "companyId",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "455790c1-ec86-4bc2-a5c2-dad4ee74298f",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "exts",
+                    "_add"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "agentID",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "password",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "companyId",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"\": {}\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "38d01ead-cb45-491a-b3df-7cfa498b23dc",
+          "name": "查询分机主语言",
+          "request": {
+            "name": "查询分机主语言",
+            "description": {
+              "content": "查询分机主语言",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "exts",
+                ":ext",
+                "language"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "ext",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a93c321e-00e3-4337-9b72-dfd5196de7a5",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exts",
+                    ":ext",
+                    "language"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "ext",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {},\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://sg.sobot.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "c5ec9a52-558f-4182-b22d-6845c5251a53",
+    "name": "OpenAPI Plant Store Agent Exts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+      "type": "text/plain"
+    }
+  }
+}

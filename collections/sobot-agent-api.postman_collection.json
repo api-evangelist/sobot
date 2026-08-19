@@ -1,0 +1,190 @@
+{
+  "item": [
+    {
+      "id": "d1684655-81b2-487e-9ac1-7a7052395c24",
+      "name": "Agent",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7ef84ee3-13a0-4b06-89b6-c98f89684ed8",
+          "name": "修改分机语音编码",
+          "request": {
+            "name": "修改分机语音编码",
+            "description": {
+              "content": "修改分机语音编码",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "exts",
+                "langCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "agent",
+                  "value": "<string>",
+                  "description": "座席(座席工号或座席id)"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentType",
+                  "value": "<string>",
+                  "description": "座席类型(1表示座席id；0或不传值表示座席工号)"
+                },
+                {
+                  "disabled": false,
+                  "key": "operator",
+                  "value": "<string>",
+                  "description": "操作人"
+                },
+                {
+                  "disabled": false,
+                  "key": "ext",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "langCodeTxt",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "公司ID",
+                "key": "Company-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aba57174-3c18-4416-9cf3-c594fe3b65f6",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "exts",
+                    "langCode"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "agent",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operator",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ext",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "langCodeTxt",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "公司ID",
+                    "key": "Company-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "authorization",
+                    "value": "{{authorization}}",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"apiVersion\": \"\",\n  \"status\": \"\",\n  \"code\": 0,\n  \"message\": \"\",\n  \"reason\": \"\",\n  \"kind\": \"\",\n  \"metaData\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0\n  },\n  \"data\": {\n    \"creatorId\": \"\",\n    \"creationTime\": 0,\n    \"updateUserId\": \"\",\n    \"updatedTime\": 0,\n    \"pageSize\": 0,\n    \"currPage\": 0,\n    \"orderByName\": \"\",\n    \"orderByASC\": false,\n    \"partition\": false,\n    \"startExt\": \"\",\n    \"batchNum\": 0,\n    \"enabled\": 0,\n    \"extensions\": {\n      \"\": null\n    },\n    \"companyId\": \"\",\n    \"id\": \"\",\n    \"ext\": \"\",\n    \"password\": \"\",\n    \"bindStatus\": 0,\n    \"bindTime\": 0,\n    \"agentUuid\": \"\",\n    \"currentUsingAgentUuid\": \"\",\n    \"agentName\": \"\",\n    \"extType\": 0,\n    \"domain\": \"\",\n    \"ha1\": \"\",\n    \"ha1b\": \"\",\n    \"status\": 0,\n    \"langCode\": \"\",\n    \"langCodeTxt\": \"\"\n  },\n  \"retMsg\": \"\",\n  \"retCode\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://sg.sobot.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "852ee9b5-be72-44c8-92a6-228262ab2b42",
+    "name": "OpenAPI Plant Store Agent API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+      "type": "text/plain"
+    }
+  }
+}

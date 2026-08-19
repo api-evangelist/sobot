@@ -1,0 +1,1803 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenAPI Plant Store Agent Exts API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Exts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "分页条件查询分机帐号",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/exts/search",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "分页条件查询分机帐号"
+        },
+        {
+          "info": {
+            "name": "查询未被使用的分机帐号",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/exts/idle/search",
+            "headers": [
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "path",
+                "description": "公司ID"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "查询未被使用的分机帐号"
+        },
+        {
+          "info": {
+            "name": "分页查询未被使用的分机帐号",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/exts/idle/page/search",
+            "headers": [
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "path",
+                "description": "公司ID"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "分页查询未被使用的分机帐号"
+        },
+        {
+          "info": {
+            "name": "根据分机号座席信息查询分机详情",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/exts/detail",
+            "headers": [
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "path",
+                "description": "公司ID"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "根据分机号座席信息查询分机详情"
+        },
+        {
+          "info": {
+            "name": "查询未绑定客服的分机列表",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/unbind",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "查询未绑定客服的分机列表"
+        },
+        {
+          "info": {
+            "name": "查询未绑定客服的分机列表和当前座席绑定的分机号",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/unbind/:agentUUID",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "agentUUID",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "查询未绑定客服的分机列表和当前座席绑定的分机号"
+        },
+        {
+          "info": {
+            "name": "分页查询未绑定客服的分机列表和当前座席绑定的分机号",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/unbind/page/:agentUUID",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "agentUUID",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "1",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "10",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "分页查询未绑定客服的分机列表和当前座席绑定的分机号"
+        },
+        {
+          "info": {
+            "name": "查询当前公司下的分机数量",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/count",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "查询当前公司下的分机数量"
+        },
+        {
+          "info": {
+            "name": "新建分机帐号-------------接口弃用",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/exts",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "新建分机帐号-------------接口弃用"
+        },
+        {
+          "info": {
+            "name": "批量新建分机",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://sg.sobot.io/exts",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "批量新建分机"
+        },
+        {
+          "info": {
+            "name": "修改分机密码",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://sg.sobot.io/exts/:id",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "修改分机密码"
+        },
+        {
+          "info": {
+            "name": "删除分机",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://sg.sobot.io/exts/:id",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "删除分机"
+        },
+        {
+          "info": {
+            "name": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/registered/:ext/:phoneType/:ip",
+            "headers": [
+              {
+                "name": "user",
+                "value": ""
+              },
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "ext",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "phoneType",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "ip",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用"
+        },
+        {
+          "info": {
+            "name": "对外接口 api:查询分机列表",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/exts/_search",
+            "headers": [
+              {
+                "name": "Company-Id",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operatorUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tempId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "language",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezone",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timezoneid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "对外接口 api:查询分机列表"
+        },
+        {
+          "info": {
+            "name": "修改分机语音编码",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://sg.sobot.io/exts/langCode",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "creatorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "creationTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updateUserId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "updatedTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currPage",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "orderByASC",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "partition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "startExt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "batchNum",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "enabled",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extensions.key",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindStatus",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "bindTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "currentUsingAgentUuid",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "extType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "domain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ha1b",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "修改分机语音编码"
+        },
+        {
+          "info": {
+            "name": "开放接口新建分机账号",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://sg.sobot.io/api/exts/_add",
+            "headers": [
+              {
+                "name": "companyId",
+                "value": ""
+              },
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "agentID",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "agentType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ext",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "password",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "langCodeTxt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "开放接口新建分机账号"
+        },
+        {
+          "info": {
+            "name": "查询分机主语言",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://sg.sobot.io/exts/:ext/language",
+            "headers": [
+              {
+                "name": "authorization",
+                "value": "{{authorization}}"
+              }
+            ],
+            "params": [
+              {
+                "name": "ext",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "companyId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "查询分机主语言"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -2,12 +2,9 @@ generated: '2026-07-21'
 method: derived
 status: candidate
 source: openapi/ (online, basic, voice)
-note: >-
-  No official hosted Sobot MCP server was found (no listing in the MCP registry,
-  npm @modelcontextprotocol, or the Sobot docs). This is a CANDIDATE tool list
-  derived one-tool-per-operation from Sobot's published OpenAPI. Operation ids
-  are not declared in the specs, so each tool is grounded on its HTTP path +
-  summary.
+note: No official hosted Sobot MCP server was found (no listing in the MCP registry, npm @modelcontextprotocol,
+  or the Sobot docs). This is a CANDIDATE tool list derived one-tool-per-operation from Sobot's published
+  OpenAPI. Operation ids are not declared in the specs, so each tool is grounded on its HTTP path + summary.
 server:
   name: sobot
   transport: http
@@ -67,3 +64,9 @@ tools:
 - name: extension_registration_status
   description: Query a voice extension's registration status
   source_operation: openapi/sobot-voice-openapi.json#GET /exts/registered/{ext}/{phoneType}/{ip}
+deployment:
+  mode: none
+  verified: derived
+  tools: 18
+  checked: '2026-08-12'
+  source: catalog MCP census

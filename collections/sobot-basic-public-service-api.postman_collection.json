@@ -1,0 +1,1064 @@
+{
+  "item": [
+    {
+      "id": "f9384200-7129-4999-ae08-09ee4635729a",
+      "name": "basic-public/service/坐席信息管理",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3ec7b02f-5f59-4aa0-b32d-09f6854413b3",
+          "name": "查询部门客服信息",
+          "request": {
+            "name": "查询部门客服信息",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "queryDepartAgentInfoList"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "f5f028b4-628b-4fa8-813a-28814bca67ab",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "queryDepartAgentInfoList"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fe96e3fd-20c6-4e26-b9d4-38aab764a34f",
+          "name": "查询客服信息列表",
+          "request": {
+            "name": "查询客服信息列表",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "queryAgentInfoList"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "serviceId",
+                  "value": "<string>",
+                  "description": "客服ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "companyId",
+                  "value": "<string>",
+                  "description": "公司ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceNick",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceStatus",
+                  "value": "<integer>",
+                  "description": "客服状态 0未激活，1启用中，2平台管控，9停用，-1删除"
+                },
+                {
+                  "disabled": false,
+                  "key": "phoneNo",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceEmail",
+                  "value": "<string>",
+                  "description": "客服邮箱"
+                },
+                {
+                  "disabled": false,
+                  "key": "cusRoleId",
+                  "value": "<string>",
+                  "description": "客服角色ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "roleId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "userId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "groupId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "groupIds",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "cusRoleName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceNo",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "departId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "managerFlag",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "qywxBindStatus",
+                  "value": "<integer>",
+                  "description": "客服绑定状态 0和2或者NULL表示未绑定，1表示绑定"
+                },
+                {
+                  "disabled": false,
+                  "key": "productIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "productIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "queryContent",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "queryType",
+                  "value": "<integer>",
+                  "description": "查询类型 1 所有 2 组织架构"
+                },
+                {
+                  "disabled": false,
+                  "key": "departFlag",
+                  "value": "<integer>",
+                  "description": "查询部门数据  1 当前部门"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceIdList",
+                  "value": "<string>",
+                  "description": "一批客服ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "serviceIdList",
+                  "value": "<string>",
+                  "description": "一批客服ID"
+                },
+                {
+                  "disabled": false,
+                  "key": "departIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "departIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "agentIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "roleIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "roleIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "userIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "userIdList",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageNo",
+                  "value": "<integer>",
+                  "description": "页数"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "<integer>",
+                  "description": "每页记录数"
+                },
+                {
+                  "disabled": false,
+                  "key": "qywxUserId",
+                  "value": "<string>",
+                  "description": "企业微信userId"
+                },
+                {
+                  "disabled": false,
+                  "key": "qywxUserIdList",
+                  "value": "<string>",
+                  "description": "企微userId列表"
+                },
+                {
+                  "disabled": false,
+                  "key": "qywxUserIdList",
+                  "value": "<string>",
+                  "description": "企微userId列表"
+                },
+                {
+                  "disabled": false,
+                  "key": "sortCol",
+                  "value": "<string>",
+                  "description": "排序字段"
+                },
+                {
+                  "disabled": false,
+                  "key": "sortSeq",
+                  "value": "<string>",
+                  "description": "排序结果，降序desc，还是升序asc"
+                },
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>",
+                  "description": "多语言"
+                },
+                {
+                  "disabled": false,
+                  "key": "type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "flag",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "timezone",
+                  "value": "<string>",
+                  "description": "时区"
+                },
+                {
+                  "disabled": false,
+                  "key": "groupIdList",
+                  "value": "<string>",
+                  "description": "客服组id list"
+                },
+                {
+                  "disabled": false,
+                  "key": "groupIdList",
+                  "value": "<string>",
+                  "description": "客服组id list"
+                },
+                {
+                  "disabled": false,
+                  "key": "delDepartFlag",
+                  "value": "<integer>",
+                  "description": "查询删除部门信息  1查询"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ec8b87d-30db-4b32-b6cb-725866689c43",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "queryAgentInfoList"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "serviceId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "companyId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceNick",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "phoneNo",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceEmail",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "cusRoleId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "roleId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "groupId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "groupIds",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "cusRoleName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceNo",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "departId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "managerFlag",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "qywxBindStatus",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "productIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "productIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "queryContent",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "queryType",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "departFlag",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "serviceIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serviceIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "departIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "departIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "agentIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "roleIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "roleIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "pageNo",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "qywxUserId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "qywxUserIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "qywxUserIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "sortCol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "sortSeq",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "flag",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "timezone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "groupIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "groupIdList",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "delDepartFlag",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "552075b2-f619-42d4-a601-2baedea5b019",
+          "name": "查询客服信息列表",
+          "request": {
+            "name": "查询客服信息列表",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "queryAgentInfoListByDepartIds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "51b23322-1dec-4f99-971e-a7c041ee5155",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "queryAgentInfoListByDepartIds"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f0a333b8-c08c-449e-92b7-986ff3d46084",
+          "name": "创建客服",
+          "request": {
+            "name": "创建客服",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "saveAgentInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "2f626c58-9791-40af-a5c8-31f71689868e",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "saveAgentInfo"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cf4ce2da-3932-402a-a8d2-453a2086d346",
+          "name": "编辑客服",
+          "request": {
+            "name": "编辑客服",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "updateAgentInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "84444137-f486-49d9-85f1-1e015e622da0",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "updateAgentInfo"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "093ed1d6-25b8-411c-9cd9-c63d151f6ff1",
+          "name": "批量修改客服角色",
+          "request": {
+            "name": "批量修改客服角色",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "batchUpdateAgentRole"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "aa849bee-3eaf-43a7-949c-32e128e2470a",
+              "name": "成功",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "batchUpdateAgentRole"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pageNo\": 0,\n  \"pageCount\": 0,\n  \"totalCount\": 0,\n  \"pageSize\": 0,\n  \"items\": [\n    {\n      \"terminalCode\": \"\",\n      \"operatePageCode\": \"\",\n      \"serviceId\": \"\",\n      \"companyId\": \"\",\n      \"serviceName\": \"\",\n      \"serviceNick\": \"\",\n      \"servicePwd\": \"\",\n      \"password\": \"\",\n      \"serviceStatus\": 0,\n      \"oldServiceStatus\": 0,\n      \"serviceQq\": \"\",\n      \"serviceBirthday\": 0,\n      \"phoneNo\": \"\",\n      \"telephoneNo\": \"\",\n      \"serviceEmail\": \"\",\n      \"serviceAddress\": \"\",\n      \"createServiceId\": \"\",\n      \"createTime\": 0,\n      \"updateServiceId\": \"\",\n      \"updateTime\": 0,\n      \"effectTime\": 0,\n      \"invalidTime\": 0,\n      \"loginTime\": 0,\n      \"lastLoginTime\": 0,\n      \"maxAccept\": 0,\n      \"maxAccount\": 0,\n      \"faceImg\": \"\",\n      \"faceImage\": \"\",\n      \"imFlag\": 0,\n      \"serviceRemark\": \"\",\n      \"cusRoleId\": \"\",\n      \"cusRoleName\": \"\",\n      \"roleId\": \"\",\n      \"roleName\": \"\",\n      \"oldRoleId\": \"\",\n      \"oldRoleName\": \"\",\n      \"serviceNo\": \"\",\n      \"numberId\": \"\",\n      \"groupName\": \"\",\n      \"topFlag\": 0,\n      \"departId\": \"\",\n      \"departName\": \"\",\n      \"qywxDepartId\": \"\",\n      \"departFlag\": 0,\n      \"departType\": \"\",\n      \"proxyServiceId\": \"\",\n      \"channelUserId\": \"\",\n      \"managerFlag\": 0,\n      \"pwdType\": 0,\n      \"docStatus\": 0,\n      \"maxReceivingTickets\": 0,\n      \"serviceList\": [\n        {\n          \"serviceId\": \"\",\n          \"serviceName\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"serviceEmail\": \"\",\n          \"qywxUserId\": \"\",\n          \"qywxBindStatus\": 0\n        }\n      ],\n      \"departList\": [\n        {\n          \"relId\": \"\",\n          \"departId\": \"\",\n          \"serviceId\": \"\",\n          \"roleId\": \"\",\n          \"serviceEmail\": \"\",\n          \"managerFlag\": 0,\n          \"companyId\": \"\",\n          \"createId\": \"\",\n          \"createTime\": 0,\n          \"mainDepartFlag\": 0\n        }\n      ],\n      \"serviceIdList\": [\n        \"\"\n      ],\n      \"ticketGroupIdList\": [\n        \"\"\n      ],\n      \"onlineGroupIdList\": [\n        \"\"\n      ],\n      \"callGroupIdList\": [\n        \"\"\n      ],\n      \"elecGroupIdList\": [\n        \"\"\n      ],\n      \"departIdList\": [\n        \"\"\n      ],\n      \"departLevelNoList\": [\n        \"\"\n      ],\n      \"productIds\": [\n        \"\"\n      ],\n      \"productNames\": [\n        \"\"\n      ],\n      \"checked\": false,\n      \"qywxBindStatus\": 0,\n      \"qywxUserId\": \"\",\n      \"language\": \"\",\n      \"workbenchLang\": \"\",\n      \"mainDepartName\": \"\",\n      \"mainDepartId\": \"\",\n      \"callV6Flag\": 0,\n      \"roleType\": 0,\n      \"verificationCode\": \"\",\n      \"newServicePwd\": \"\",\n      \"phoneFlag\": 0,\n      \"duty\": \"\",\n      \"maxNum\": 0,\n      \"serviceIds\": \"\",\n      \"sortFlag\": 0,\n      \"newbieFlag\": 0,\n      \"timezone\": \"\",\n      \"timezoneId\": \"\",\n      \"timezoneValue\": \"\",\n      \"offset\": \"\",\n      \"groupType\": 0,\n      \"groupNames\": [\n        {\n          \"0\": {}\n        }\n      ],\n      \"groupId\": \"\",\n      \"ticketGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"onlineGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"callGroupIds\": [\n        {\n          \"terminalCode\": \"\",\n          \"operatePageCode\": \"\",\n          \"serviceId\": \"\",\n          \"companyId\": \"\",\n          \"serviceName\": \"\",\n          \"serviceNick\": \"\",\n          \"servicePwd\": \"\",\n          \"password\": \"\",\n          \"serviceStatus\": 0,\n          \"oldServiceStatus\": 0,\n          \"serviceQq\": \"\",\n          \"serviceBirthday\": 0,\n          \"phoneNo\": \"\",\n          \"telephoneNo\": \"\",\n          \"serviceEmail\": \"\",\n          \"serviceAddress\": \"\",\n          \"createServiceId\": \"\",\n          \"createTime\": 0,\n          \"updateServiceId\": \"\",\n          \"updateTime\": 0,\n          \"effectTime\": 0,\n          \"invalidTime\": 0,\n          \"loginTime\": 0,\n          \"lastLoginTime\": 0,\n          \"maxAccept\": 0,\n          \"maxAccount\": 0,\n          \"faceImg\": \"\",\n          \"faceImage\": \"\",\n          \"imFlag\": 0,\n          \"serviceRemark\": \"\",\n          \"cusRoleId\": \"\",\n          \"cusRoleName\": \"\",\n          \"roleId\": \"\",\n          \"roleName\": \"\",\n          \"oldRoleId\": \"\",\n          \"oldRoleName\": \"\",\n          \"serviceNo\": \"\",\n          \"numberId\": \"\",\n          \"groupName\": \"\",\n          \"topFlag\": 0,\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"qywxDepartId\": \"\",\n          \"departFlag\": 0,\n          \"departType\": \"\",\n          \"proxyServiceId\": \"\",\n          \"channelUserId\": \"\",\n          \"managerFlag\": 0,\n          \"pwdType\": 0,\n          \"docStatus\": 0,\n          \"maxReceivingTickets\": 0,\n          \"serviceList\": [\n            {\n              \"serviceId\": \"\",\n              \"serviceName\": \"\",\n              \"cusRoleId\": \"\",\n              \"cusRoleName\": \"\",\n              \"serviceEmail\": \"\",\n              \"qywxUserId\": \"\",\n              \"qywxBindStatus\": 0\n            }\n          ],\n          \"departList\": [\n            {\n              \"relId\": \"\",\n              \"departId\": \"\",\n              \"serviceId\": \"\",\n              \"roleId\": \"\",\n              \"serviceEmail\": \"\",\n              \"managerFlag\": 0,\n              \"companyId\": \"\",\n              \"createId\": \"\",\n              \"createTime\": 0,\n              \"mainDepartFlag\": 0\n            }\n          ],\n          \"serviceIdList\": [\n            \"\"\n          ],\n          \"ticketGroupIdList\": [\n            \"\"\n          ],\n          \"onlineGroupIdList\": [\n            \"\"\n          ],\n          \"callGroupIdList\": [\n            \"\"\n          ],\n          \"elecGroupIdList\": [\n            \"\"\n          ],\n          \"departIdList\": [\n            \"\"\n          ],\n          \"departLevelNoList\": [\n            \"\"\n          ],\n          \"productIds\": [\n            \"\"\n          ],\n          \"productNames\": [\n            \"\"\n          ],\n          \"checked\": false,\n          \"qywxBindStatus\": 0,\n          \"qywxUserId\": \"\",\n          \"language\": \"\",\n          \"workbenchLang\": \"\",\n          \"mainDepartName\": \"\",\n          \"mainDepartId\": \"\",\n          \"callV6Flag\": 0,\n          \"roleType\": 0,\n          \"verificationCode\": \"\",\n          \"newServicePwd\": \"\",\n          \"phoneFlag\": 0,\n          \"duty\": \"\",\n          \"maxNum\": 0,\n          \"serviceIds\": \"\",\n          \"sortFlag\": 0,\n          \"newbieFlag\": 0,\n          \"timezone\": \"\",\n          \"timezoneId\": \"\",\n          \"timezoneValue\": \"\",\n          \"offset\": \"\",\n          \"groupType\": 0,\n          \"groupNames\": [\n            {\n              \"0\": {}\n            }\n          ],\n          \"groupId\": \"\",\n          \"ticketGroupIds\": [],\n          \"onlineGroupIds\": [],\n          \"callGroupIds\": [],\n          \"departmentInfoList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ],\n          \"roleFlag\": 0,\n          \"product\": 0,\n          \"authCode\": \"\",\n          \"authCodeList\": [\n            \"\"\n          ],\n          \"departLevelNoNames\": \"\",\n          \"departLevelNoNameList\": [\n            \"\"\n          ]\n        }\n      ],\n      \"departmentInfoList\": [\n        {\n          \"departId\": \"\",\n          \"departName\": \"\",\n          \"departLevel\": 0,\n          \"sourceNo\": 0,\n          \"departType\": \"\",\n          \"parentId\": \"\",\n          \"departLevelNo\": \"\",\n          \"qywxDepartId\": \"\",\n          \"companyId\": \"\",\n          \"createTime\": 0,\n          \"createId\": \"\",\n          \"updateTime\": 0,\n          \"updateId\": \"\",\n          \"subFlag\": 0,\n          \"deparentIds\": [\n            \"\"\n          ],\n          \"subDepartmentList\": [\n            {\n              \"departId\": \"\",\n              \"departName\": \"\",\n              \"departLevel\": 0,\n              \"sourceNo\": 0,\n              \"departType\": \"\",\n              \"parentId\": \"\",\n              \"departLevelNo\": \"\",\n              \"qywxDepartId\": \"\",\n              \"companyId\": \"\",\n              \"createTime\": 0,\n              \"createId\": \"\",\n              \"updateTime\": 0,\n              \"updateId\": \"\",\n              \"subFlag\": 0,\n              \"deparentIds\": [\n                \"\"\n              ],\n              \"subDepartmentList\": []\n            }\n          ]\n        }\n      ],\n      \"roleFlag\": 0,\n      \"product\": 0,\n      \"authCode\": \"\",\n      \"authCodeList\": [\n        \"\"\n      ],\n      \"departLevelNoNames\": \"\",\n      \"departLevelNoNameList\": [\n        \"\"\n      ]\n    }\n  ],\n  \"item\": {},\n  \"retCode\": \"\",\n  \"retMsg\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://sg.sobot.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "bfa0dbc4-7008-44d8-8029-f53932ec2dbe",
+    "name": "OpenAPI Plant Store Agent basic-public/service/坐席信息管理 API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+      "type": "text/plain"
+    }
+  }
+}
