@@ -45,6 +45,19 @@ tags:
 - Contact Center
 - Customer Service
 - Live Chat
+- Chatbots
+- Voice
+- Ticketing
+- WhatsApp
+- Omnichannel
+- Communications
+- Artificial Intelligence
+tags_raw:
+- Company
+- Enterprise
+- Contact Center
+- Customer Service
+- Live Chat
 - Chatbot
 - Voice
 - Ticketing
@@ -64,6 +77,8 @@ apis:
   humanURL: https://docs.sobot.io/api-reference/chat_connect
   baseURL: https://sg.sobot.io
   tags:
+  - Agents
+  tags_raw:
   - Agent
   properties:
   - type: OpenAPI
