@@ -1,11 +1,12 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: OpenAPI Plant Store Agent User API
-  description: A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification
+  title: Sobot User API
+  version: 1.0.0
   license:
     name: MIT
-  version: 1.0.0
+  description: 'Operations tagged User across 2 of this provider''s published API definitions: sobot-main-openapi.json, sobot-online-openapi.json. Each path carries the servers of the definition it was published in.'
 servers:
+- url: http://sandbox.mintlify.com
 - url: https://sg.sobot.io
 security:
 - bearerAuth: []
@@ -67,6 +68,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/chat_send:
     post:
       summary: chat_send
@@ -98,6 +101,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/robot_chat:
     post:
       summary: robot_chat
@@ -151,6 +156,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/robot_feedback:
     post:
       summary: robot_feedback
@@ -210,6 +217,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/comment:
     post:
       summary: comment
@@ -247,6 +256,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/out:
     post:
       summary: out
@@ -266,6 +277,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/offline_msg_data:
     post:
       summary: offline_msg_data
@@ -298,6 +311,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/query_cids:
     post:
       summary: query_cids
@@ -336,6 +351,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/get_detail_by_cid:
     post:
       summary: get_detail_by_cid
@@ -371,6 +388,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/admin_is_work:
     post:
       summary: admin_is_work
@@ -388,6 +407,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/get_once_data:
     post:
       summary: get_once_data
@@ -397,6 +418,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/query_group:
     post:
       summary: query_group
@@ -406,6 +429,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/query_agent:
     post:
       summary: query_agent
@@ -459,6 +484,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/query_session_status:
     post:
       summary: 只针对接口对接用户
@@ -478,6 +505,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/getUserInfo:
     post:
       summary: 查询用户信息
@@ -497,6 +526,8 @@ paths:
           description: No Content
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
   /api/5/user/query_suggest:
     get:
       summary: querySuggest
@@ -572,8 +603,13 @@ paths:
                 description: void
       tags:
       - User
+    servers:
+    - url: http://sandbox.mintlify.com
 components:
   securitySchemes:
     bearerAuth:
       type: http
       scheme: bearer
+x-refined-from:
+- sobot-main-openapi.json
+- sobot-online-openapi.json

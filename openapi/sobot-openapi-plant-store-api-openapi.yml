@@ -1,0 +1,42 @@
+openapi: 3.2.0
+info:
+  title: Sobot OpenAPI Plant Store API
+  version: 1.0.0
+  license:
+    name: MIT
+  description: 'Operations tagged OpenAPI Plant Store across 4 of this provider''s published API definitions: sobot-basic-openapi.json, sobot-main-openapi.json, sobot-online-openapi.json, sobot-voice-openapi.json. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://sg.sobot.io
+- url: http://sandbox.mintlify.com
+security:
+- bearerAuth: []
+tags:
+- name: OpenAPI Plant Store
+paths: {}
+webhooks:
+  /plant/webhook:
+    post:
+      description: Information about a new plant added to the store
+      requestBody:
+        description: Plant added to the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewPlant'
+      responses:
+        '200':
+          description: Return a 200 status to indicate that the data was received successfully
+      tags:
+      - OpenAPI Plant Store
+    servers:
+    - url: https://sg.sobot.io
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+x-refined-from:
+- sobot-basic-openapi.json
+- sobot-main-openapi.json
+- sobot-online-openapi.json
+- sobot-voice-openapi.json

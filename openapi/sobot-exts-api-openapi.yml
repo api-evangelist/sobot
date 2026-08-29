@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: OpenAPI Plant Store Agent Exts API
+  title: OpenAPI Plant Store Exts API
   description: A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification
   license:
     name: MIT

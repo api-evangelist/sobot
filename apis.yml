@@ -134,6 +134,16 @@ apis:
     url: openapi/sobot-user-api-openapi.yml
   - type: Documentation
     url: https://docs.sobot.io/api-reference/introduction
+- aid: sobot:sobot-openapi-plant-store-api
+  name: Sobot OpenAPI Plant Store API
+  description: The OpenAPI Plant Store API from Sobot — 0 operation(s) for openapi plant store.
+  humanURL: https://docs.sobot.io/api-reference/chat_connect
+  baseURL: https://sg.sobot.io
+  tags:
+  - OpenAPI Plant Store
+  properties:
+  - type: OpenAPI
+    url: openapi/sobot-openapi-plant-store-api-openapi.yml
 common:
 - type: Authentication
   url: authentication/sobot-authentication.yml
