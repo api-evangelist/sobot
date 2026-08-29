@@ -1,0 +1,51 @@
+slug: sobot
+provider: Sobot
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Telecommunications
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: basic-public/service/坐席信息管理
+  spec_file: sobot-basic-public-service-api-openapi.yml
+  capability_id: BC-430.30
+  capability_id_l1: BC-430
+  capability_name: Contact Centre Operations Management
+  confidence: 0.75
+  evidence: POST /agent/saveAgentInfo 创建客服, POST /agent/updateAgentInfo 编辑客服, POST /agent/batchUpdateAgentRole
+    批量修改客服角色, GET /agent/queryAgentInfoList
+  reason: 'The tag (坐席信息管理 = agent information management) manages contact-centre agents: create/edit
+    agent, list agents by department, bulk-change agent roles. This is contact-centre staffing/administration,
+    i.e. contact centre operations. It is not general HR employee records since the entities are service
+    agents inside the contact-centre platform.'
+- tag: Exts
+  spec_file: sobot-exts-api-openapi.yml
+  capability_id: BC-430.30
+  capability_id_l1: BC-430
+  capability_name: Contact Centre Operations Management
+  confidence: 0.72
+  evidence: POST /exts/search 分页条件查询分机帐号; GET /exts/unbind/{agentUUID} 查询未绑定客服的分机列表和当前座席绑定的分机号; DELETE
+    /exts/{id} 删除分机
+  reason: Lifecycle and agent-binding of PBX extension accounts (分机) for a cloud call centre is contact-centre
+    telephony operations; not telecom numbering-resource stewardship since these are internal extensions
+    of the tenant's contact centre.
+- tag: User
+  spec_file: sobot-user-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.7
+  evidence: POST /api/5/user/chat_connect, POST /api/5/user/chat_send, POST /api/5/user/robot_chat, POST
+    /api/5/user/offline_msg_data
+  reason: 'These are the visitor-side operations of Sobot''s live-chat/chatbot contact centre: connecting
+    a customer to chat, sending messages, bot conversation, offline messages and comments. That is inbound
+    customer contact handling and resolution (customer service), not a technical user-account CRUD surface.
+    Sub-capability is inquiry management, though the chatbot operations also touch self-service, hence
+    not higher confidence.'
