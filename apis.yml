@@ -146,6 +146,8 @@ apis:
   - type: OpenAPI
     url: openapi/sobot-openapi-plant-store-api-openapi.yml
 common:
+- type: Website
+  url: https://www.sobot.io/
 - type: CapabilityMap
   url: capabilities/sobot-capability-edges.yml
   name: Sobot Business Capability Map
