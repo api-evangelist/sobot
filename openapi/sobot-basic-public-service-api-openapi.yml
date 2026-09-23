@@ -635,6 +635,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475141-run
       security: []
+      operationId: postAgentQueryDepartAgentInfoList
+      x-operation-id-source: derived
   /agent/queryAgentInfoList:
     get:
       summary: 查询客服信息列表
@@ -1496,6 +1498,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475142-run
       security: []
+      operationId: getAgentQueryAgentInfoList
+      x-operation-id-source: derived
   /agent/queryAgentInfoListByDepartIds:
     post:
       summary: 查询客服信息列表
@@ -2119,6 +2123,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475144-run
       security: []
+      operationId: postAgentQueryAgentInfoListByDepartIds
+      x-operation-id-source: derived
   /agent/saveAgentInfo:
     post:
       summary: 创建客服
@@ -2742,6 +2748,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475146-run
       security: []
+      operationId: postAgentSaveAgentInfo
+      x-operation-id-source: derived
   /agent/updateAgentInfo:
     post:
       summary: 编辑客服
@@ -3365,6 +3373,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475147-run
       security: []
+      operationId: postAgentUpdateAgentInfo
+      x-operation-id-source: derived
   /agent/batchUpdateAgentRole:
     post:
       summary: 批量修改客服角色
@@ -3988,6 +3998,8 @@ paths:
                     retMsg: ''
       x-run-in-apifox: https://apifox.com/web/project/345161/apis/api-3475150-run
       security: []
+      operationId: postAgentBatchUpdateAgentRole
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:

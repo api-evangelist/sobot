@@ -3,7 +3,6 @@
   "sources": [
     "_original/sobot-basic-openapi.json",
     "_original/sobot-main-openapi.json",
-    "_original/sobot-online-openapi.json",
     "_original/sobot-voice-openapi.json"
   ],
   "outputs": [
@@ -33,7 +32,8 @@
   ],
   "warnings": [],
   "notes": [
-    "sourced from openapi/_original/ (4 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "1 archived document(s) dropped as subsets of other archived documents",
+    "sourced from openapi/_original/ (3 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "sobot-basic-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "sobot-basic-openapi.json: tagged webhooks POST /plant/webhook -> OpenAPI Plant Store",
     "sobot-basic-openapi.json: declared missing tag: OpenAPI Plant Store",
@@ -58,26 +58,6 @@
     "sobot-main-openapi.json: tagged webhooks POST /plant/webhook -> OpenAPI Plant Store",
     "sobot-main-openapi.json: declared missing tag: OpenAPI Plant Store",
     "sobot-main-openapi.json: declared missing tag: User",
-    "sobot-online-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/chat_connect -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/chat_send -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/robot_chat -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/robot_feedback -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/comment -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/out -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/offline_msg_data -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/query_cids -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/get_detail_by_cid -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/admin_is_work -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/get_once_data -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/query_group -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/query_agent -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/query_session_status -> User",
-    "sobot-online-openapi.json: tagged paths POST /api/5/user/getUserInfo -> User",
-    "sobot-online-openapi.json: tagged paths GET /api/5/user/query_suggest -> User",
-    "sobot-online-openapi.json: tagged webhooks POST /plant/webhook -> OpenAPI Plant Store",
-    "sobot-online-openapi.json: declared missing tag: OpenAPI Plant Store",
-    "sobot-online-openapi.json: declared missing tag: User",
     "sobot-voice-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "sobot-voice-openapi.json: tagged paths POST /exts/search -> Exts",
     "sobot-voice-openapi.json: tagged paths POST /exts/idle/search -> Exts",
@@ -101,13 +81,15 @@
     "sobot-voice-openapi.json: declared missing tag: Agent",
     "sobot-voice-openapi.json: declared missing tag: Exts",
     "sobot-voice-openapi.json: declared missing tag: OpenAPI Plant Store",
-    "tag 'OpenAPI Plant Store' spans 4 source specs (sobot-basic-openapi.json, sobot-main-openapi.json, sobot-online-openapi.json, sobot-voice-openapi.json): per-path servers applied",
-    "tag 'User' spans 2 source specs (sobot-main-openapi.json, sobot-online-openapi.json): per-path servers applied"
+    "tag 'OpenAPI Plant Store' spans 3 source specs (sobot-basic-openapi.json, sobot-main-openapi.json, sobot-voice-openapi.json): per-path servers applied",
+    "apis.yml register: already-registered"
   ],
   "skipped": [
+    "_original/sobot-online-openapi.json: archived document superseded by a larger archived document",
     "sobot-agent-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "sobot-basic-public-service-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "sobot-exts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "sobot-openapi-plant-store-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "sobot-user-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }

@@ -16,7 +16,6 @@ paths:
     post:
       summary: 分页条件查询分机帐号
       deprecated: false
-      description: 分页条件查询分机帐号
       tags:
       - Exts
       parameters:
@@ -269,11 +268,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postExtsSearch
+      x-operation-id-source: derived
   /exts/idle/search:
     post:
       summary: 查询未被使用的分机帐号
       deprecated: false
-      description: 查询未被使用的分机帐号
       tags:
       - Exts
       parameters:
@@ -412,11 +412,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postExtsIdleSearch
+      x-operation-id-source: derived
   /exts/idle/page/search:
     post:
       summary: 分页查询未被使用的分机帐号
       deprecated: false
-      description: 分页查询未被使用的分机帐号
       tags:
       - Exts
       parameters:
@@ -537,11 +538,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postExtsIdlePageSearch
+      x-operation-id-source: derived
   /exts/detail:
     post:
       summary: 根据分机号座席信息查询分机详情
       deprecated: false
-      description: 根据分机号座席信息查询分机详情
       tags:
       - Exts
       parameters:
@@ -658,11 +660,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postExtsDetail
+      x-operation-id-source: derived
   /exts/unbind:
     get:
       summary: 查询未绑定客服的分机列表
       deprecated: false
-      description: 查询未绑定客服的分机列表
       tags:
       - Exts
       parameters:
@@ -773,11 +776,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsUnbind
+      x-operation-id-source: derived
   /exts/unbind/{agentUUID}:
     get:
       summary: 查询未绑定客服的分机列表和当前座席绑定的分机号
       deprecated: false
-      description: 查询未绑定客服的分机列表和当前座席绑定的分机号
       tags:
       - Exts
       parameters:
@@ -894,11 +898,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsUnbindByAgentUUID
+      x-operation-id-source: derived
   /exts/unbind/page/{agentUUID}:
     get:
       summary: 分页查询未绑定客服的分机列表和当前座席绑定的分机号
       deprecated: false
-      description: 分页查询未绑定客服的分机列表和当前座席绑定的分机号
       tags:
       - Exts
       parameters:
@@ -1009,11 +1014,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsUnbindPageByAgentUUID
+      x-operation-id-source: derived
   /exts/count:
     get:
       summary: 查询当前公司下的分机数量
       deprecated: false
-      description: 查询当前公司下的分机数量
       tags:
       - Exts
       parameters:
@@ -1093,11 +1099,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsCount
+      x-operation-id-source: derived
   /exts:
     post:
       summary: 新建分机帐号-------------接口弃用
       deprecated: false
-      description: 新建分机帐号-------------接口弃用
       tags:
       - Exts
       parameters:
@@ -1346,10 +1353,11 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postExts
+      x-operation-id-source: derived
     patch:
       summary: 批量新建分机
       deprecated: false
-      description: 批量新建分机
       tags:
       - Exts
       parameters:
@@ -1571,11 +1579,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: patchExts
+      x-operation-id-source: derived
   /exts/{id}:
     put:
       summary: 修改分机密码
       deprecated: false
-      description: 修改分机密码
       tags:
       - Exts
       parameters:
@@ -1830,10 +1839,11 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: putExtsById
+      x-operation-id-source: derived
     delete:
       summary: 删除分机
       deprecated: false
-      description: 删除分机
       tags:
       - Exts
       parameters:
@@ -2088,11 +2098,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: deleteExtsById
+      x-operation-id-source: derived
   /exts/registered/{ext}/{phoneType}/{ip}:
     get:
       summary: 查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用
       deprecated: false
-      description: 查询分机的注册状态,webmsg收到EventUnreachable/EventUnregistered时调用
       tags:
       - Exts
       parameters:
@@ -2201,11 +2212,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsRegisteredByExtByPhoneTypeByIp
+      x-operation-id-source: derived
   /api/exts/_search:
     post:
       summary: 对外接口 api:查询分机列表
       deprecated: false
-      description: 对外接口 api:查询分机列表
       tags:
       - Exts
       parameters:
@@ -2468,11 +2480,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postApiExtsSearch
+      x-operation-id-source: derived
   /exts/langCode:
     put:
       summary: 修改分机语音编码
       deprecated: false
-      description: 修改分机语音编码
       tags:
       - Exts
       parameters:
@@ -2721,11 +2734,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: putExtsLangCode
+      x-operation-id-source: derived
   /api/exts/_add:
     post:
       summary: 开放接口新建分机账号
       deprecated: false
-      description: 开放接口新建分机账号
       tags:
       - Exts
       parameters:
@@ -2807,11 +2821,12 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: postApiExtsAdd
+      x-operation-id-source: derived
   /exts/{ext}/language:
     get:
       summary: 查询分机主语言
       deprecated: false
-      description: 查询分机主语言
       tags:
       - Exts
       parameters:
@@ -2862,6 +2877,8 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: getExtsByExtLanguage
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:

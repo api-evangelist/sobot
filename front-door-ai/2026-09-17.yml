@@ -1,0 +1,36 @@
+# Front Door AI Index — sobot — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: sobot
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.sobot.io
+  final_host: www.sobot.io
+  ownership: own
+  owner: sobot
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 254
+  host_score: 254
+  density: 50.76
+  words: 5004
+  tiers:
+    agentic: 95
+    core: 149
+    model: 10
+  ambiguous: 103
+  top_terms:
+    AI: 146
+    agent: 98
+    AI agent: 70
+    chatbot: 9
+    agentic: 7
+    OpenAI: 4
+    automation: 4
+    copilot: 4
+    Anthropic: 3
+    conversational AI: 3
+    Claude: 2
+    large language model: 2

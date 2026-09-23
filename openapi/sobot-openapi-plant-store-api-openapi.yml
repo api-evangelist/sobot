@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   license:
     name: MIT
-  description: 'Operations tagged OpenAPI Plant Store across 4 of this provider''s published API definitions: sobot-basic-openapi.json, sobot-main-openapi.json, sobot-online-openapi.json, sobot-voice-openapi.json. Each path carries the servers of the definition it was published in.'
+  description: 'Operations tagged OpenAPI Plant Store across 3 of this provider''s published API definitions: sobot-basic-openapi.json, sobot-main-openapi.json, sobot-voice-openapi.json. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://sg.sobot.io
 - url: http://sandbox.mintlify.com
@@ -28,6 +28,8 @@ webhooks:
           description: Return a 200 status to indicate that the data was received successfully
       tags:
       - OpenAPI Plant Store
+      summary: Create plant webhook
+      x-summary-source: derived
     servers:
     - url: https://sg.sobot.io
 components:
@@ -38,5 +40,4 @@ components:
 x-refined-from:
 - sobot-basic-openapi.json
 - sobot-main-openapi.json
-- sobot-online-openapi.json
 - sobot-voice-openapi.json

@@ -1,13 +1,12 @@
 openapi: 3.2.0
 info:
-  title: Sobot User API
-  version: 1.0.0
+  title: OpenAPI Plant Store User API
+  description: A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification
   license:
     name: MIT
-  description: 'Operations tagged User across 2 of this provider''s published API definitions: sobot-main-openapi.json, sobot-online-openapi.json. Each path carries the servers of the definition it was published in.'
+  version: 1.0.0
 servers:
 - url: http://sandbox.mintlify.com
-- url: https://sg.sobot.io
 security:
 - bearerAuth: []
 tags:
@@ -16,7 +15,6 @@ paths:
   /api/5/user/chat_connect:
     post:
       summary: chat_connect
-      description: chat_connect
       requestBody:
         content:
           application/json:
@@ -68,12 +66,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserChatConnect
+      x-operation-id-source: derived
   /api/5/user/chat_send:
     post:
       summary: chat_send
-      description: chat_send
       requestBody:
         content:
           application/json:
@@ -101,12 +98,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserChatSend
+      x-operation-id-source: derived
   /api/5/user/robot_chat:
     post:
       summary: robot_chat
-      description: robot_chat
       requestBody:
         content:
           application/json:
@@ -156,12 +152,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserRobotChat
+      x-operation-id-source: derived
   /api/5/user/robot_feedback:
     post:
       summary: robot_feedback
-      description: robot_feedback
       requestBody:
         content:
           application/json:
@@ -217,12 +212,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserRobotFeedback
+      x-operation-id-source: derived
   /api/5/user/comment:
     post:
       summary: comment
-      description: comment
       requestBody:
         content:
           application/json:
@@ -256,12 +250,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserComment
+      x-operation-id-source: derived
   /api/5/user/out:
     post:
       summary: out
-      description: out
       requestBody:
         content:
           application/json:
@@ -277,12 +270,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserOut
+      x-operation-id-source: derived
   /api/5/user/offline_msg_data:
     post:
       summary: offline_msg_data
-      description: offline_msg_data
       requestBody:
         content:
           application/json:
@@ -311,12 +303,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserOfflineMsgData
+      x-operation-id-source: derived
   /api/5/user/query_cids:
     post:
       summary: query_cids
-      description: query_cids
       requestBody:
         content:
           application/json:
@@ -351,12 +342,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserQueryCids
+      x-operation-id-source: derived
   /api/5/user/get_detail_by_cid:
     post:
       summary: get_detail_by_cid
-      description: get_detail_by_cid
       requestBody:
         content:
           application/json:
@@ -388,12 +378,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserGetDetailByCid
+      x-operation-id-source: derived
   /api/5/user/admin_is_work:
     post:
       summary: admin_is_work
-      description: admin_is_work
       parameters:
       - name: groupid
         in: query
@@ -407,34 +396,31 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserAdminIsWork
+      x-operation-id-source: derived
   /api/5/user/get_once_data:
     post:
       summary: get_once_data
-      description: get_once_data
       responses:
         '200':
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserGetOnceData
+      x-operation-id-source: derived
   /api/5/user/query_group:
     post:
       summary: query_group
-      description: query_group
       responses:
         '200':
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserQueryGroup
+      x-operation-id-source: derived
   /api/5/user/query_agent:
     post:
       summary: query_agent
-      description: query_agent
       parameters:
       - name: visitorid
         in: query
@@ -484,12 +470,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserQueryAgent
+      x-operation-id-source: derived
   /api/5/user/query_session_status:
     post:
       summary: 只针对接口对接用户
-      description: 只针对接口对接用户
       requestBody:
         content:
           application/json:
@@ -505,12 +490,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserQuerySessionStatus
+      x-operation-id-source: derived
   /api/5/user/getUserInfo:
     post:
       summary: 查询用户信息
-      description: 查询用户信息
       requestBody:
         content:
           application/json:
@@ -526,12 +510,11 @@ paths:
           description: No Content
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: postApi5UserGetUserInfo
+      x-operation-id-source: derived
   /api/5/user/query_suggest:
     get:
       summary: querySuggest
-      description: querySuggest
       parameters:
       - name: question
         in: query
@@ -603,13 +586,10 @@ paths:
                 description: void
       tags:
       - User
-    servers:
-    - url: http://sandbox.mintlify.com
+      operationId: getApi5UserQuerySuggest
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:
       type: http
       scheme: bearer
-x-refined-from:
-- sobot-main-openapi.json
-- sobot-online-openapi.json

@@ -16,7 +16,6 @@ paths:
     put:
       summary: 修改分机语音编码
       deprecated: false
-      description: 修改分机语音编码
       tags:
       - Agent
       parameters:
@@ -121,6 +120,8 @@ paths:
                     retCode: ''
           headers: {}
       security: []
+      operationId: putAgentExtsLangCode
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:
