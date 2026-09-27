@@ -99,7 +99,7 @@ apis:
   - type: Documentation
     url: https://docs.sobot.io/api-reference/introduction
 - aid: sobot:sobot-basic-public-service-api
-  name: Sobot basic-public/service/坐席信息管理 API
+  name: "Sobot basic-public/service/\u5750\u5E2D\u4FE1\u606F\u7BA1\u7406 API"
   description: >-
     The basic-public/service/坐席信息管理 API from Sobot — 6 operation(s) for basic-public/service/坐席信息管理.
   humanURL: https://docs.sobot.io/api-reference/chat_connect
