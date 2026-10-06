@@ -46,7 +46,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 x-enrichment:
   date: '2026-07-21'
   status: enriched
@@ -146,6 +146,8 @@ apis:
   - type: OpenAPI
     url: openapi/sobot-openapi-plant-store-api-openapi.yml
 common:
+- url: https://www.sobot.io/blog/feed/
+  type: BlogRSS
 - type: Website
   url: https://www.sobot.io/
 - type: CapabilityMap
